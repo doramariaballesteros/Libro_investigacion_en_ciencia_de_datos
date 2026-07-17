@@ -18,7 +18,7 @@ Los **Capítulos 1 y 2** corresponden a contenidos teóricos.
 
 Los **Capítulos 3 y 4** incluyen cuatro casos de estudio desarrollados completamente en notebooks.
 
-El **Capítulo 5** utiliza dos frameworks de investigación desarrollados por la autora.
+El **Capítulo 5** utiliza dos frameworks de investigación desarrollados en co-autoría.
 
 ---
 
