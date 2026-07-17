@@ -24,12 +24,12 @@ El **Capítulo 5** utiliza dos frameworks de investigación desarrollados en co-
 
 # 📚 Casos de estudio
 
-| Capítulo | Caso de estudio | Notebook | Dataset |
-|-----------|-----------------|:--------:|:-------:|
-| **3** | COVID-19 (Bogotá) | 📒 [Abrir](Capitulo3/Caso_estudio1/COVID-19.ipynb) | 📄 [Dataset](Capitulo3/Caso_estudio1/covid_2020_mayo.csv) |
-| **3** | Bank Churn | 📒 [Abrir](Capitulo3/Caso_estudio2/Bank_churn.ipynb) | 📄 [Dataset](Capitulo3/Caso_estudio2/Bank_churn.csv) |
-| **4** | Clima | 📒 [Abrir](Capitulo4/Caso1/Clima.ipynb) | 📄 [Dataset](Capitulo4/Caso1/clima.csv) |
-| **4** | TWLO Prices | 📒 [Abrir](Capitulo4/Caso2/Twlo_prices.ipynb) | 📄 [Dataset](Capitulo4/Caso2/twlo_prices.csv) |
+| Cap. | Caso de estudio | Descripción | 📒 Notebook | 📄 Dataset |
+|:---:|------------------|-------------|:----------:|:---------:|
+| **3** | 🦠 **COVID-19 (Bogotá)** | Dataset abierto de la **Alcaldía Mayor de Bogotá** con información de los casos reportados de COVID-19 hasta mayo de 2020. Se utiliza para desarrollar técnicas de análisis exploratorio de datos y visualización. | [Abrir](Capitulo3/Caso_estudio1/COVID-19.ipynb) | [Dataset](Capitulo3/Caso_estudio1/covid_2020_mayo.csv) |
+| **3** | 🏦 **Bank Churn** | Dataset público utilizado para predecir el abandono de clientes bancarios (*Customer Churn*). El caso de estudio incluye análisis exploratorio, transformación de variables, imputación de datos y entrenamiento de un modelo de clasificación. | [Abrir](Capitulo3/Caso_estudio2/Bank_churn.ipynb) | [Dataset](Capitulo3/Caso_estudio2/Bank_churn.csv) |
+| **4** | 🌦️ **Clima** | Dataset de variables meteorológicas utilizado para predecir el estado del clima mediante técnicas de Ingeniería de Características (*Feature Engineering*) y aprendizaje automático. | [Abrir](Capitulo4/Caso1/Clima.ipynb) | [Dataset](Capitulo4/Caso1/clima.csv) |
+| **4** | 📈 **TWLO Prices** | Serie temporal pública con precios históricos de las acciones de **Twilio Inc. (TWLO)**, utilizada para desarrollar modelos de predicción financiera mediante Ingeniería de Características y aprendizaje automático. | [Abrir](Capitulo4/Caso2/Twlo_prices.ipynb) | [Dataset](Capitulo4/Caso2/twlo_prices.csv) |
 
 ---
 
