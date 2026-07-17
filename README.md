@@ -16,7 +16,7 @@ El libro combina los fundamentos teóricos con casos de estudio completamente re
 
 Los **Capítulos 1 y 2** corresponden a contenidos teóricos.
 
-Los **Capítulos 3 y 4** incluyen cuatro casos de estudio desarrollados completamente en notebooks.
+Los **Capítulos 3 y 4** incluyen cuatro casos de estudio completamente reproducibles, desarrollados mediante Jupyter Notebooks.
 
 El **Capítulo 5** utiliza dos frameworks de investigación desarrollados en co-autoría.
 
@@ -210,7 +210,7 @@ Los ejemplos desarrollados en el **Capítulo 5** hacen uso de dos frameworks de 
 
 ## 🎤 Imitation
 
-Framework para técnicas de imitación de voz mediante Procesamiento Digital de Señales.
+Framework de código abierto para realizar imitación de voz mediante Procesamiento Digital de Señales.
 
 🔗 https://github.com/doramariaballesteros/Imitation-using-Signal-Processing
 
@@ -268,7 +268,7 @@ ISBN: **978-1-957395-63-0**
 
 # 👩‍🏫 Sobre la autora
 
-**Dora María Ballesteros** es profesora e investigadora de la **Universidad Militar Nueva Granada (Colombia)**. Su trabajo se centra en Ciencia de Datos, Inteligencia Artificial, Procesamiento Digital de Señales y Aprendizaje Profundo. Es autora de diversos libros, artículos científicos y herramientas de software de código abierto orientadas a la investigación y la formación de estudiantes e investigadores.
+**Dora María Ballesteros** es profesora e investigadora de la **Universidad Militar Nueva Granada (Colombia)**. Su trabajo se centra en Ciencia de Datos, Inteligencia Artificial, Procesamiento Digital de Señales y Aprendizaje Profundo. Es autora de diversos libros y artículos científicos en Ciencia de Datos, Inteligencia Artificial y Procesamiento Digital de Señales, promoviendo el desarrollo de recursos educativos y herramientas de software de código abierto para la comunidad académica.
 
 ---
 
