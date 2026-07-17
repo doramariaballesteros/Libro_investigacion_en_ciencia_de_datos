@@ -8,7 +8,7 @@
 
 ---
 
-## 📖 Descripción
+## 📖 Sobre este repositorio
 
 Este repositorio contiene el material práctico del libro **Investigación en Ciencia de Datos** (Editorial Redipe, 2026).
 
