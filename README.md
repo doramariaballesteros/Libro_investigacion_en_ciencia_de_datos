@@ -1,6 +1,3 @@
-📖 Libro: Investigación en Ciencia de Datos (Editorial Redipe, 2026)
-💻 Repositorio oficial con notebooks y casos de estudio reproducibles en Python.
-
 # 📘 Investigación en Ciencia de Datos
 
 > **Repositorio oficial del libro**
