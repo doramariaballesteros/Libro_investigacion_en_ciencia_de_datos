@@ -253,7 +253,7 @@ Los notebooks pueden ejecutarse en:
 
 - Jupyter Notebook
 - JupyterLab
-- Google Colab
+- Google Colab (100% compatible)
 
 ---
 
