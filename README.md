@@ -206,11 +206,11 @@ Desarrollar un modelo predictivo para una serie temporal financiera mediante té
 
 # 🎙️ Capítulo 5. Frameworks utilizados
 
-Los ejemplos desarrollados en el Capítulo 5 utilizan dos frameworks de investigación desarrollados por la autora.
+Los ejemplos desarrollados en el **Capítulo 5** hacen uso de dos frameworks de código abierto desarrollados como resultado de proyectos de investigación realizados en **coautoría**, los cuales complementan los conceptos presentados en el libro y permiten al lector experimentar con aplicaciones reales de Procesamiento Digital de Señales e Inteligencia Artificial.
 
 ## 🎤 Imitation
 
-Framework orientado al Procesamiento Digital de Señales para técnicas de imitación de voz.
+Framework para técnicas de imitación de voz mediante Procesamiento Digital de Señales.
 
 🔗 https://github.com/doramariaballesteros/Imitation-using-Signal-Processing
 
