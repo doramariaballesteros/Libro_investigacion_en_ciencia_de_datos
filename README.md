@@ -32,6 +32,27 @@ El **Capítulo 5** utiliza dos frameworks de investigación desarrollados en co-
 | **4** | 📈 **TWLO Prices** | Serie temporal pública con precios históricos de las acciones de **Twilio Inc. (TWLO)**, utilizada para desarrollar modelos de predicción financiera mediante Ingeniería de Características y aprendizaje automático. | [Abrir](Capitulo4/Caso2/Twlo_prices.ipynb) | [Dataset](Capitulo4/Caso2/twlo_prices.csv) |
 
 ---
+
+# 📖 Capítulo 1. Introducción a la Ciencia de Datos e Ingeniería de Datos
+
+## 📚 Laboratorio 1. Transformación de datos e Ingeniería de Características
+
+📝 **Guía del laboratorio**
+
+➡️ [Laboratorio_Transformacion_datos_y_FE.md](Capitulo1/Laboratorio_Transformacion_datos_y_FE.md)
+
+
+### 🎯 Objetivo
+
+Fortalecer la comprensión de los conceptos fundamentales relacionados con la transformación de datos y la ingeniería de características, mediante la aplicación de técnicas de codificación de variables categóricas y el análisis de los enfoques **data-centric** y **model-centric** en proyectos de Ciencia de Datos.
+
+
+### 📚 Descripción de la práctica
+
+En este laboratorio los estudiantes aplicarán técnicas básicas de transformación de datos sobre variables categóricas nominales y ordinales, identificando la representación más adecuada para su utilización en algoritmos de aprendizaje automático. Además, analizarán las diferencias entre los enfoques **data-centric** y **model-centric**, reconociendo el papel que desempeñan la calidad de los datos y el diseño de los modelos en el desarrollo de soluciones de Ciencia de Datos.
+
+---
+
 # 📖 Capítulo 2. Tipos de datos e Ingeniería de Características
 
 ## 📰 Laboratorio 1. Lectura y análisis de un artículo científico
