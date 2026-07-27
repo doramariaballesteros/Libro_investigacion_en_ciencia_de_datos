@@ -38,11 +38,11 @@ El **Capítulo 5** utiliza dos frameworks de investigación desarrollados en co-
 
 📄 **Artículo científico**
 
-[Influence of Hyperparameters in Deep Learning Models for Coffee Rust Detection](Laboratorio_1_Coffee_Rust_Articulo.pdf)
+➡️ [Influence of Hyperparameters in Deep Learning Models for Coffee Rust Detection](Laboratorio_1_Coffee_Rust_Articulo.pdf)
 
 📝 **Guía del laboratorio**
 
-[Laboratorio_1_Coffee_Rust_Guia.md](Laboratorio_1_Coffee_Rust_Guia.md)
+➡️ [Guía del laboratorio](Laboratorio_1_Coffee_Rust_Guia.md)
 
 
 ### 🎯 Objetivo
