@@ -1,4 +1,4 @@
-# 📚 Laboratorio de Investigación 1
+# 📚 Laboratorio 1
 ## Transformación de datos e Ingeniería de Características
 
 ### 🎯 Objetivo
