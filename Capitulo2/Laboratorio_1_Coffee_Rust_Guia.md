@@ -83,9 +83,9 @@ No existe una única respuesta correcta; se evaluará la calidad de la argumenta
 
 | Nivel | Descripción | Calificación |
 |:------|:------------|:------------:|
-| 🟢 **Sobresaliente** | Analiza correctamente el artículo, interpreta los resultados experimentales y sustenta sus respuestas con evidencia técnica. Argumenta adecuadamente la selección del modelo. | **4.6 – 5.0** |
-| 🟡 **Competente** | Comprende la metodología y los principales resultados, aunque algunas respuestas presentan justificaciones parciales o poco profundas. | **3.8 – 4.5** |
-| 🔴 **En desarrollo** | Presenta dificultades para interpretar los datos, los modelos o las métricas. Las respuestas son principalmente descriptivas y con escasa argumentación técnica. | **3.0 – 3.7** |
+| 🟢 **Sobresaliente** | Analiza correctamente el artículo, interpreta los resultados experimentales y sustenta sus respuestas con evidencia técnica. Argumenta adecuadamente la selección del modelo. | **4.4 – 5.0** |
+| 🟡 **Competente** | Comprende la metodología y los principales resultados, aunque algunas respuestas presentan justificaciones parciales o poco profundas. | **3.4 – 4.3** |
+| 🔴 **En desarrollo** | Presenta dificultades para interpretar los datos, los modelos o las métricas. Las respuestas son principalmente descriptivas y con escasa argumentación técnica. | **2.5 – 3.3** |
 
 ---
 
