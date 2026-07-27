@@ -32,6 +32,28 @@ El **Capítulo 5** utiliza dos frameworks de investigación desarrollados en co-
 | **4** | 📈 **TWLO Prices** | Serie temporal pública con precios históricos de las acciones de **Twilio Inc. (TWLO)**, utilizada para desarrollar modelos de predicción financiera mediante Ingeniería de Características y aprendizaje automático. | [Abrir](Capitulo4/Caso2/Twlo_prices.ipynb) | [Dataset](Capitulo4/Caso2/twlo_prices.csv) |
 
 ---
+# 📖 Capítulo 2. Tipos de datos e Ingeniería de Características
+
+## 📰 Laboratorio 1. Lectura y análisis de un artículo científico
+
+📄 **Artículo científico**
+
+[Influence of Hyperparameters in Deep Learning Models for Coffee Rust Detection](Laboratorio_1_Coffee_Rust_Articulo.pdf)
+
+📝 **Guía del laboratorio**
+
+[Laboratorio_1_Coffee_Rust_Guia.md](Laboratorio_1_Coffee_Rust_Guia.md)
+
+
+### 🎯 Objetivo
+
+Fortalecer las habilidades de lectura crítica de artículos científicos mediante el análisis de un proyecto de Ciencia de Datos, identificando las decisiones tomadas durante la preparación de los datos, el diseño de los modelos de aprendizaje y la evaluación de su desempeño.
+
+### 📚 Descripción de la práctica
+
+En este laboratorio los estudiantes analizarán un artículo científico publicado en una revista internacional indexada. A partir de la lectura del trabajo, responderán una guía orientada a interpretar las principales etapas de un proyecto de Ciencia de Datos, incluyendo el análisis del conjunto de datos, las estrategias de preprocesamiento, la evaluación de diferentes modelos de Deep Learning, la interpretación de métricas de desempeño y la selección del modelo más adecuado considerando tanto su precisión como su costo computacional.
+
+---
 
 # 📊 Capítulo 3. Datos estructurados
 
