@@ -10,15 +10,15 @@
 
 ## 📖 Sobre este repositorio
 
-Este repositorio contiene el material práctico del libro **Investigación en Ciencia de Datos** (Editorial Redipe, 2026).
+Este repositorio contiene el material complementario del libro **Investigación en Ciencia de Datos** (Editorial Redipe, 2026).
 
-El libro combina los fundamentos teóricos con casos de estudio completamente reproducibles desarrollados en **Python** mediante **Jupyter Notebooks**, permitiendo al lector seguir paso a paso el proceso de análisis de datos, ingeniería de características y construcción de modelos predictivos.
+El libro integra fundamentos teóricos, laboratorios de aprendizaje, lectura crítica de artículos científicos, casos de estudio reproducibles y aplicaciones de Inteligencia Artificial desarrolladas en **Python** mediante **Jupyter Notebooks**, permitiendo al lector recorrer las diferentes etapas de un proyecto de Ciencia de Datos, desde la preparación de los datos hasta la construcción y evaluación de modelos de aprendizaje automático.
 
-Los **Capítulos 1 y 2** corresponden a contenidos teóricos.
-
-Los **Capítulos 3 y 4** incluyen cuatro casos de estudio completamente reproducibles, desarrollados mediante Jupyter Notebooks.
-
-El **Capítulo 5** utiliza dos frameworks de investigación desarrollados en co-autoría.
+- **Capítulo 1. Introducción a la Ciencia de Datos e Ingeniería de Datos:** laboratorio sobre transformación de datos e ingeniería de características.
+- **Capítulo 2. Tipos de datos e Ingeniería de Características:** laboratorio de lectura y análisis de un artículo científico.
+- **Capítulo 3. Datos estructurados:** dos casos de estudio completamente reproducibles desarrollados en Jupyter Notebooks.
+- **Capítulo 4. Series de tiempo:** dos casos de estudio completamente reproducibles desarrollados en Jupyter Notebooks.
+- **Capítulo 5. Audio e Inteligencia Artificial:** aplicaciones basadas en dos frameworks de investigación desarrollados en coautoría y disponibles como repositorios públicos.
 
 ---
 
