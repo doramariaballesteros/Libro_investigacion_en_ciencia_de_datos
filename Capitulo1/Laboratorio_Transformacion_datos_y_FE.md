@@ -9,11 +9,11 @@ Aplicar técnicas de transformación de variables categóricas y ordinales, e id
 
 ### 👥 Modalidad
 
-Trabajo en parejas.
+Trabajo indivudual
 
 ### ⏱️ Tiempo
 
-**45 minutos**
+**15 minutos**
 
 ### 📤 Entregable
 
@@ -58,9 +58,9 @@ Se tiene una columna denominada **Nota cualitativa**, cuyos posibles valores son
 
 | Nivel | Descripción | Calificación |
 |:------|:------------|:------------:|
-| 🟢 **Sobresaliente** | Selecciona correctamente las transformaciones de datos, justifica sus decisiones y explica claramente las diferencias entre los enfoques data-centric y model-centric. | **4.6 – 5.0** |
-| 🟡 **Competente** | Aplica adecuadamente las transformaciones y comprende los conceptos principales, aunque algunas justificaciones presentan pequeñas imprecisiones. | **3.8 – 4.5** |
-| 🔴 **En desarrollo** | Presenta dificultades para seleccionar la transformación adecuada o para explicar los conceptos fundamentales relacionados con la preparación de datos y los enfoques de Ciencia de Datos. | **3.0 – 3.7** |
+| 🟢 **Sobresaliente** | Selecciona correctamente las transformaciones de datos, justifica sus decisiones y explica claramente las diferencias entre los enfoques data-centric y model-centric. | **4.4 – 5.0** |
+| 🟡 **Competente** | Aplica adecuadamente las transformaciones y comprende los conceptos principales, aunque algunas justificaciones presentan pequeñas imprecisiones. | **3.4 – 4.3** |
+| 🔴 **En desarrollo** | Presenta dificultades para seleccionar la transformación adecuada o para explicar los conceptos fundamentales relacionados con la preparación de datos y los enfoques de Ciencia de Datos. | **2.5 – 3.3** |
 
 ---
 
