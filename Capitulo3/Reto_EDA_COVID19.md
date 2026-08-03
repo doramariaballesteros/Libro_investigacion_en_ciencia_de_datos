@@ -81,9 +81,11 @@ Su respuesta debe incluir:
 - Una justificación de por qué considera que esa información es relevante para la toma de decisiones de la Alcaldía.
 
 ---
-Su propuesta será evaluada considerando la pertinencia del análisis, la calidad de la evidencia técnica presentada, la interpretación de los resultados y la solidez de las recomendaciones formuladas para apoyar la toma de decisiones.
+
 
 # 📋 Rúbrica de evaluación
+
+Su propuesta será evaluada considerando la pertinencia del análisis, la calidad de la evidencia técnica presentada, la interpretación de los resultados y la solidez de las recomendaciones formuladas para apoyar la toma de decisiones.
 
 ## 🎯 Criterio 1. Implementación de soluciones de ingeniería de datos mediante Análisis Exploratorio de Datos (1000 puntos)
 
