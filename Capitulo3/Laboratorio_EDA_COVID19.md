@@ -1,4 +1,4 @@
-# 🧩 Quiz 1. Análisis Exploratorio de Datos (EDA)
+# 🧩 Reto 1. Análisis Exploratorio de Datos (EDA)
 
 ## Ciencia de Datos
 
