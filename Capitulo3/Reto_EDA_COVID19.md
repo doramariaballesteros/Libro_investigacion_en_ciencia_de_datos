@@ -3,7 +3,7 @@
 ## Ciencia de Datos
 
 ### ⏱️ Duración
-**40 minutos**
+**60 minutos**
 
 ### 👥 Modalidad
 Trabajo **por parejas**.
