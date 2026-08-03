@@ -89,7 +89,7 @@ Su propuesta será evaluada considerando la pertinencia del análisis, la calida
 
 ## 🎯 Criterio 1. Implementación de soluciones de ingeniería de datos mediante Análisis Exploratorio de Datos (1000 puntos)
 
-| Acción observable | Insuficiente (0–400) | En proceso (400–700) | Sobresaliente (700–1000) |
+| Acción observable | Insuficiente (0–250) | En proceso (250–350) | Sobresaliente (350-500) |
 |-------------------|----------------------|----------------------|--------------------------|
 | Propone un indicador para priorizar localidades a intervenir. | No propone un indicador o presenta un indicador que no responde al problema planteado. | Propone un indicador, pero su pertinencia o justificación es parcial o insuficiente para apoyar la toma de decisiones. | Propone un indicador pertinente, correctamente sustentado y útil para priorizar la intervención de localidades. |
 | Analiza la vulnerabilidad de la población utilizando las variables disponibles del conjunto de datos. | No realiza el análisis o presenta un análisis incorrecto o inconsistente. | Realiza el análisis, pero la interpretación es parcial, superficial o insuficientemente justificada. | Realiza un análisis completo, interpreta correctamente los resultados y justifica técnicamente las conclusiones obtenidas. |
