@@ -1,4 +1,4 @@
-# 🧩 Reto 1. Análisis Exploratorio de Datos (EDA)
+# 🧩 Reto 1. Descubriendo información para la toma de decisiones mediante EDA
 
 ## Ciencia de Datos
 
@@ -18,13 +18,13 @@ Cada grupo deberá entregar **un único archivo PDF** con las respuestas, incluy
 
 Ustedes hacen parte del equipo de **Ciencia de Datos** contratado por la **Alcaldía de Bogotá** para apoyar la toma de decisiones durante la pandemia de COVID-19.
 
-El notebook desarrollado en clase constituye un primer Análisis Exploratorio de Datos (EDA). Sin embargo, el Alcalde considera que aún existen preguntas importantes por responder antes de definir nuevas medidas de prevención y control.
+La Alcaldía de Bogotá ha recibido el primer informe de Análisis Exploratorio de Datos (EDA); sin embargo, considera que aún existen preguntas sin responder antes de definir nuevas estrategias de prevención y control.
 
-Como científicos de datos, su objetivo no es únicamente construir visualizaciones, sino **transformar los datos en información útil para apoyar la toma de decisiones**.
+Su equipo ha sido contratado como consultor en Ciencia de Datos para proponer nuevos análisis que permitan transformar los datos en información útil para apoyar la toma de decisiones.
 
 ---
 
-# Pregunta 1 (2.5 puntos)
+# 🧩 Desafío 1. ¿Qué localidades deberían intervenirse primero?
 
 El notebook presenta el número de casos por localidad.
 
@@ -38,7 +38,7 @@ Su respuesta debe incluir:
 
 ---
 
-# Pregunta 2 (2.5 puntos)
+# 🧩 Desafío 2. ¿Qué población requiere mayor atención?
 
 Utilizando las variables disponibles en el conjunto de datos, proponga un análisis que permita identificar **qué población presenta mayor vulnerabilidad frente al COVID-19**.
 
@@ -52,7 +52,7 @@ Su respuesta debe incluir:
 
 ---
 
-# Pregunta 3 (2.5 puntos)
+# 🧩 Desafío 3. ¿Funcionaron las medidas implementadas?
 
 El notebook analiza la evolución temporal de los contagios.
 
@@ -68,7 +68,7 @@ Su respuesta debe incluir:
 
 ---
 
-# Pregunta 4 (2.5 puntos)
+# 🧩 Desafío 4. Convenza al Secretario de Salud con una única visualización.
 
 Imagine que el Secretario de Salud únicamente le permite presentar **una nueva visualización** que no aparece en el notebook desarrollado en clase.
 
@@ -81,11 +81,17 @@ Su respuesta debe incluir:
 - Una justificación de por qué considera que esa información es relevante para la toma de decisiones de la Alcaldía.
 
 ---
+Su propuesta será evaluada considerando la pertinencia del análisis, la calidad de la evidencia técnica presentada, la interpretación de los resultados y la solidez de las recomendaciones formuladas para apoyar la toma de decisiones.
 
 # 📋 Rúbrica de evaluación
 
-| Acciones observables | Insuficiente (0–6.9) | En proceso (7.0–8.9) | Sobresaliente (9.0–10.0) |
-|----------------------|----------------------|----------------------|--------------------------|
-| Formula análisis pertinentes para responder las preguntas planteadas, presenta evidencias técnicas, interpreta correctamente los resultados obtenidos y justifica las decisiones propuestas para la Alcaldía. | Presenta análisis incompletos o poco pertinentes. Las evidencias técnicas son insuficientes o no respaldan las conclusiones. La interpretación y las recomendaciones presentan inconsistencias o escasa justificación. | Presenta análisis pertinentes y evidencias técnicas suficientes para responder la mayoría de las preguntas. Interpreta adecuadamente los resultados y formula recomendaciones con una justificación aceptable, aunque con oportunidades de mejora. | Presenta análisis pertinentes e innovadores, respaldados por evidencias técnicas claras y suficientes. Interpreta correctamente los resultados, establece relaciones entre las variables analizadas y formula recomendaciones sólidas, bien argumentadas y orientadas a la toma de decisiones. |
+## 🎯 Criterio 1. Implementación de soluciones de ingeniería de datos mediante Análisis Exploratorio de Datos (1000 puntos)
+
+| Acción observable | Insuficiente (0–400) | En proceso (400–700) | Sobresaliente (700–1000) |
+|-------------------|----------------------|----------------------|--------------------------|
+| Propone un indicador para priorizar localidades a intervenir. | No propone un indicador o presenta un indicador que no responde al problema planteado. | Propone un indicador, pero su pertinencia o justificación es parcial o insuficiente para apoyar la toma de decisiones. | Propone un indicador pertinente, correctamente sustentado y útil para priorizar la intervención de localidades. |
+| Analiza la vulnerabilidad de la población utilizando las variables disponibles del conjunto de datos. | No realiza el análisis o presenta un análisis incorrecto o inconsistente. | Realiza el análisis, pero la interpretación es parcial, superficial o insuficientemente justificada. | Realiza un análisis completo, interpreta correctamente los resultados y justifica técnicamente las conclusiones obtenidas. |
+| Propone un análisis exploratorio para evaluar el efecto de una medida implementada. | No propone el análisis o presenta una propuesta que no permite responder la pregunta planteada. | Propone un análisis pertinente, pero la evidencia técnica o la interpretación son parciales o insuficientes. | Propone un análisis pertinente, correctamente sustentado mediante evidencias técnicas e interpreta adecuadamente los resultados para apoyar la toma de decisiones. |
+| Diseña una visualización que aporte información relevante para la toma de decisiones. | No diseña la visualización o presenta una visualización que no aporta información relevante. | Diseña la visualización, pero la información presentada o la justificación son parciales o superficiales. | Diseña una visualización pertinente, comunica claramente la información obtenida y justifica técnicamente su utilidad para la toma de decisiones. |
 
 > 📌 **Recuerde:** En Ciencia de Datos, el valor no está en producir la mayor cantidad de gráficas, sino en transformar los datos en información útil para apoyar la toma de decisiones.
