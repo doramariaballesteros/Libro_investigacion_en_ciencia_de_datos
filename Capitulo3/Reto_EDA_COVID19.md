@@ -96,4 +96,14 @@ Su propuesta será evaluada considerando la pertinencia del análisis, la calida
 | Propone un análisis exploratorio para evaluar el efecto de una medida implementada. | No propone el análisis o presenta una propuesta que no permite responder la pregunta planteada. | Propone un análisis pertinente, pero la evidencia técnica o la interpretación son parciales o insuficientes. | Propone un análisis pertinente, correctamente sustentado mediante evidencias técnicas e interpreta adecuadamente los resultados para apoyar la toma de decisiones. |
 | Diseña una visualización que aporte información relevante para la toma de decisiones. | No diseña la visualización o presenta una visualización que no aporta información relevante. | Diseña la visualización, pero la información presentada o la justificación son parciales o superficiales. | Diseña una visualización pertinente, comunica claramente la información obtenida y justifica técnicamente su utilidad para la toma de decisiones. |
 
+Nota final =  corresponde al promedio de las notas obtenidas en cada acción observable
+---
+
+# 🎯 Resultado de Aprendizaje evaluado
+
+## **RA 2.1**
+
+> **Implementa soluciones de ingeniería de datos para datos estructurados, series de tiempo y señales de voz, integrando procesos de exploración, transformación, ingeniería de características y análisis sobre un conjunto de datos, utilizando Python y tomando como referencia los casos de estudio desarrollados en la asignatura.**
+
+
 > 📌 **Recuerde:** En Ciencia de Datos, el valor no está en producir la mayor cantidad de gráficas, sino en transformar los datos en información útil para apoyar la toma de decisiones.
