@@ -1,10 +1,10 @@
-# 📘 Ciencia de Datos
+# 📘 Investigación en Ciencia de Datos
 
 ## Capítulos relacionados
 
-- 📊 Capítulo 4. Clasificación supervisada.
-- 🧩 Capítulo 5. Preparación de datos e Ingeniería de Características.
-- 🧪 Capítulo 6. Diseño Experimental para Ciencia de Datos.
+- 🌐 Capítulo 1. Introducción a la Ciencia de Datos e Ingeniería de Datos.
+- 🧩 Capítulo 2. Tipos de datos e Ingeniería de Características.
+- 🏦 Capítulo 3. Datos Estructurados (Caso de estudio: Bank Churn).
 
 ---
 
