@@ -134,6 +134,22 @@ Como mínimo deberán realizar los siguientes experimentos:
 >
 > Posteriormente deberá evaluarse el desempeño del pipeline incorporando conjuntamente todas las modificaciones realizadas.
 
+### 📋 Tabla 1. Diseño Experimental (Ejemplo ilustrativo)
+
+Cada grupo deberá documentar el diseño de sus experimentos utilizando una tabla similar a la siguiente.
+
+| Experimento | Hipótesis | Actualización del pipeline | Métricas evaluadas | ¿Se acepta la hipótesis? |
+|-------------|-----------|----------------------------|--------------------|--------------------------|
+| Base | — | Pipeline desarrollado durante la clase | Accuracy, Precision, Recall y F1-score | — |
+| E1 | La nueva característica permitirá mejorar el Recall del modelo. | Incorporación de una nueva feature. | Accuracy, Precision, Recall y F1-score | Sí / No |
+| E2 | Una nueva estrategia de imputación permitirá mejorar el desempeño del modelo. | Cambio de estrategia de imputación. | Accuracy, Precision, Recall y F1-score | Sí / No |
+| E3 | La nueva transformación permitirá mejorar la capacidad predictiva del modelo. | Incorporación de una nueva transformación de datos. | Accuracy, Precision, Recall y F1-score | Sí / No |
+| E4 | La combinación de las tres modificaciones producirá un mejor desempeño que cada modificación por separado. | Pipeline actualizado. | Accuracy, Precision, Recall y F1-score | Sí / No |
+| E5 | Un nuevo modelo de clasificación superará el desempeño del modelo desarrollado durante la clase. | Cambio del modelo de clasificación. | Accuracy, Precision, Recall y F1-score | Sí / No |
+
+> 📌 **Importante**
+>
+> Las hipótesis deberán formularse antes de ejecutar cada experimento.
 ---
 
 ## 🤖 Etapa 4. Investigación e incorporación de un nuevo modelo de clasificación
