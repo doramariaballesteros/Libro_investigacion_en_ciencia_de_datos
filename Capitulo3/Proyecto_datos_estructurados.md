@@ -140,16 +140,16 @@ Cada grupo deberá documentar el diseño de sus experimentos utilizando una tabl
 
 | Experimento | Hipótesis | Actualización del pipeline | Métricas evaluadas | ¿Se acepta la hipótesis? |
 |-------------|-----------|----------------------------|--------------------|--------------------------|
-| Base | — | Pipeline desarrollado durante la clase | Accuracy, Precision, Recall y F1-score | — |
-| E1 | La nueva característica permitirá mejorar el Recall del modelo. | Incorporación de una nueva feature. | Accuracy, Precision, Recall y F1-score | Sí / No |
-| E2 | Una nueva estrategia de imputación permitirá mejorar el desempeño del modelo. | Cambio de estrategia de imputación. | Accuracy, Precision, Recall y F1-score | Sí / No |
-| E3 | La nueva transformación permitirá mejorar la capacidad predictiva del modelo. | Incorporación de una nueva transformación de datos. | Accuracy, Precision, Recall y F1-score | Sí / No |
-| E4 | La combinación de las tres modificaciones producirá un mejor desempeño que cada modificación por separado. | Pipeline actualizado. | Accuracy, Precision, Recall y F1-score | Sí / No |
-| E5 | Un nuevo modelo de clasificación superará el desempeño del modelo desarrollado durante la clase. | Cambio del modelo de clasificación. | Accuracy, Precision, Recall y F1-score | Sí / No |
+| Base | — | Pipeline desarrollado durante la clase. | Accuracy, Precision, Recall y F1-score | — |
+| E1 | La incorporación de una nueva característica permitirá mejorar el F1-score del modelo. | Incorporación de una nueva característica (Feature Engineering). | Accuracy, Precision, Recall y F1-score | Sí / No |
+| E2 | La implementación de una nueva estrategia de imputación permitirá mejorar el F1-score del modelo. | Cambio de la estrategia de imputación. | Accuracy, Precision, Recall y F1-score | Sí / No |
+| E3 | La incorporación de una nueva transformación de datos permitirá mejorar el F1-score del modelo. | Incorporación de una nueva transformación de datos. | Accuracy, Precision, Recall y F1-score | Sí / No |
+| E4 | La combinación de las tres modificaciones permitirá obtener un mejor F1-score que cada modificación por separado. | Pipeline de preparación de datos actualizado. | Accuracy, Precision, Recall y F1-score | Sí / No |
+| E5 | Un nuevo modelo de clasificación permitirá mejorar el F1-score respecto al modelo desarrollado durante la clase. | Cambio del modelo de clasificación. | Accuracy, Precision, Recall y F1-score | Sí / No |
 
 > 📌 **Importante**
 >
-> Las hipótesis deberán formularse antes de ejecutar cada experimento.
+> Aunque en todos los experimentos deberán calcular **Accuracy, Precision, Recall y F1-score**, la **métrica objetivo del proyecto será F1-score**. En consecuencia, las hipótesis deberán formularse buscando mejorar esta métrica y las conclusiones deberán justificar los resultados obtenidos con base en ella.
 ---
 
 ## 🤖 Etapa 4. Investigación e incorporación de un nuevo modelo de clasificación
