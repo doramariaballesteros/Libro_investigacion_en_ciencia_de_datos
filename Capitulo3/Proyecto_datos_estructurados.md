@@ -179,16 +179,14 @@ Con el fin de analizar el impacto del modelo de clasificación sobre diferentes 
 
 ---
 
-## 📊 Etapa 5. Comparación de resultados y selección de la mejor solución
+## 🏆 Etapa 5. Análisis del impacto de las estrategias implementadas
 
-Analice los resultados obtenidos durante todos los experimentos realizados.
+A partir de los resultados obtenidos en las Etapas 3 y 4, analice el efecto de las modificaciones realizadas sobre el desempeño del sistema de clasificación.
 
-Como mínimo deberán:
+Como mínimo deberán responder las siguientes preguntas:
 
-- construir la Tabla de Diseño Experimental;
-- comparar el desempeño de todos los experimentos realizados;
-- analizar el impacto individual de cada modificación;
-- analizar el impacto conjunto del pipeline actualizado;
-- comparar el nuevo modelo de clasificación con el modelo desarrollado durante la clase;
-- seleccionar la mejor solución obtenida;
-- justificar técnicamente la decisión utilizando las métricas obtenidas.
+1. **¿Cuál fue el impacto sobre el desempeño del clasificador al actualizar el pipeline de preparación de datos mediante nuevas estrategias de ingeniería de características, imputación y transformación de datos?**
+
+2. **¿Cuál fue el impacto de cambiar el modelo de clasificación al utilizar dos versiones diferentes del pipeline de preparación de datos (pipeline desarrollado durante la clase y pipeline actualizado)?**
+
+Finalmente, seleccione la mejor solución obtenida durante el proyecto y justifique técnicamente su decisión utilizando la evidencia experimental obtenida.
