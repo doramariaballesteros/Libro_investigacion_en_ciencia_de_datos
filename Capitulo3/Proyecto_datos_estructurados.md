@@ -156,21 +156,26 @@ Cada grupo deberá documentar el diseño de sus experimentos utilizando una tabl
 
 Investigue un modelo de clasificación diferente al desarrollado durante la clase e incorpórelo al pipeline actualizado.
 
-Algunas alternativas que pueden investigar son:
-
-- Random Forest;
-- Regresión Logística;
-- Support Vector Machine (SVM);
-- K-Nearest Neighbors (KNN);
-- XGBoost;
-- LightGBM;
-- CatBoost;
-- Gradient Boosting;
-- Naive Bayes;
-- Redes Neuronales;
-- cualquier otro modelo de clasificación debidamente justificado.
+Algunas alternativas q ue pueden investigar son: Random Forest; Regresión Logística; Support Vector Machine (SVM); K-Nearest Neighbors (KNN); XGBoost;LightGBM; CatBoost; Gradient Boosting; Naive Bayes; Redes Neuronales; cualquier otro modelo de clasificación debidamente justificado.
 
 El nuevo modelo deberá compararse con el modelo base utilizando las mismas métricas de evaluación.
+
+### 📋 Tabla 2. Evaluación del efecto del modelo de clasificación (Ejemplo ilustrativo)
+
+Con el fin de analizar el impacto del modelo de clasificación sobre diferentes versiones del pipeline de preparación de datos, cada grupo deberá realizar los siguientes experimentos.
+
+| Experimento | Pipeline de preparación de datos | Modelo de clasificación | Accuracy | Precision | Recall | F1-score |
+|-------------|----------------------------------|--------------------------|----------|-----------|--------|----------|
+| M1 | Baseline (desarrollado durante la clase) | Árbol de Decisión | | | | |
+| M2 | Baseline (desarrollado durante la clase) | Nuevo modelo | | | | |
+| M3 | Mejor pipeline obtenido en la Etapa 3 | Árbol de Decisión | | | | |
+| M4 | Mejor pipeline obtenido en la Etapa 3 | Nuevo modelo | | | | |
+
+> 📌 **Importante**
+>
+> Compare el efecto del nuevo modelo de clasificación sobre el pipeline desarrollado durante la clase y sobre el mejor pipeline obtenido en la Etapa 3.
+>
+> Analice si el cambio de clasificador produce el mismo comportamiento en ambas soluciones o si su impacto depende del pipeline de preparación de datos utilizado.
 
 ---
 
