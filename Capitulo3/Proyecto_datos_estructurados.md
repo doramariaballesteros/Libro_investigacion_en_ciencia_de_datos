@@ -34,6 +34,10 @@ El objetivo consiste en actualizar experimentalmente el pipeline de Ciencia de D
 
 Al finalizar el proyecto deberán recomendar la mejor solución sustentando su decisión mediante evidencia experimental.
 
+>📌 Reflexión
+>
+>En Ingeniería y Ciencia de Datos, una solución no debe reemplazarse únicamente porque exista una alternativa más reciente o diferente. Una solución se >considera superada cuando la evidencia experimental demuestra que otra estrategia ofrece un mejor desempeño para el problema que se desea resolver. Por esta >razón, el objetivo de este proyecto no consiste en modificar el pipeline por modificarlo, sino en diseñar experimentos que permitan determinar objetivamente si >las nuevas estrategias propuestas representan una mejora respecto a la solución desarrollada durante la clase.
+
 ---
 
 # 🧩 Etapas del proyecto
