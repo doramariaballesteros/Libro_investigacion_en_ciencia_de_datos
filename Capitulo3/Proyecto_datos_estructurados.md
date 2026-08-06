@@ -194,3 +194,43 @@ Como mínimo deberán responder las siguientes preguntas:
 2. **¿Cuál fue el impacto de cambiar el modelo de clasificación al utilizar dos versiones diferentes del pipeline de preparación de datos (pipeline desarrollado durante la clase y pipeline actualizado)?**
 
 Finalmente, seleccione la mejor solución obtenida durante el proyecto y justifique técnicamente su decisión utilizando la evidencia experimental obtenida.
+
+
+# 📋 Rúbrica de evaluación
+
+## Resultado de Aprendizaje 6.1 (80%)
+
+**Diseña y ejecuta experimentos computacionales sobre datos estructurados, series de tiempo y señales de voz, comparando distintas estrategias de análisis, preprocesamiento, ingeniería de características o modelado, interpretando los resultados mediante métricas apropiadas y proponiendo mejoras a partir de la evidencia obtenida.**
+
+### Criterio
+
+**Actualización experimental del pipeline de preparación de datos.**
+
+### Acción observable
+
+Diseña y ejecuta experimentos computacionales que actualizan el pipeline de preparación de datos mediante la incorporación de una nueva característica (*Feature Engineering*), una estrategia de imputación diferente y una nueva transformación de datos, evaluando el impacto de cada modificación de manera independiente y conjunta sobre el desempeño del modelo de clasificación.
+
+| Nivel | Descripción | Puntaje |
+|--------|-------------|---------|
+| 🔴 **Insuficiente** | **No diseña ni ejecuta** experimentos computacionales para actualizar el pipeline de preparación de datos mediante las modificaciones solicitadas, o **no evalúa** el impacto de dichas modificaciones sobre el desempeño del modelo de clasificación. | **0 – 150** |
+| 🟡 **En proceso** | **Diseña y ejecuta parcialmente** experimentos computacionales para actualizar el pipeline de preparación de datos, **pero** las modificaciones implementadas son incompletas, presentan inconsistencias o la evaluación independiente y conjunta del impacto resulta insuficiente. | **150 – 250** |
+| 🟢 **Sobresaliente** | **Diseña y ejecuta correctamente** experimentos computacionales que actualizan de forma **completa** el pipeline de preparación de datos mediante una nueva característica (*Feature Engineering*), una estrategia de imputación diferente y una nueva transformación de datos, evaluando de manera independiente y conjunta el impacto de cada modificación sobre el desempeño del modelo de clasificación. | **250 – 400** |
+
+---
+
+## Resultado de Aprendizaje 7.1 (20%)
+
+**Investiga, selecciona e incorpora de manera autónoma una técnica, herramienta o estrategia relacionada con Ciencia de Datos que no haya sido desarrollada explícitamente en clase, justificando su integración dentro de la solución de un problema basado en datos estructurados, series de tiempo o señales de voz mediante Python.**
+
+### Criterio
+
+**Integración experimental de un nuevo modelo de clasificación.**
+
+### Acción observable
+
+Investiga, selecciona e incorpora un modelo de clasificación diferente al desarrollado durante la clase, comparando su desempeño sobre el pipeline desarrollado durante la clase y sobre el pipeline actualizado, justificando su incorporación mediante la evidencia experimental obtenida.
+
+| Nivel | Descripción | Puntaje |
+|--------|-------------|---------|
+| 🔴 **Insuficiente** | **No investiga ni incorpora** un modelo de clasificación diferente al desarrollado durante la clase, o **no compara** objetivamente su desempeño sobre el pipeline desarrollado durante la clase y el pipeline actualizado. | **0** |
+| 🟢 **Sobresaliente** | **Investiga, selecciona e incorpora correctamente** un modelo de clasificación diferente al desarrollado durante la clase, comparando objetivamente su desempeño sobre el pipeline desarrollado durante la clase y el pipeline actualizado, justificando completamente su incorporación mediante la evidencia experimental obtenida. | **100** |
