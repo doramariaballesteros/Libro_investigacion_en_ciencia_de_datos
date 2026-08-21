@@ -22,7 +22,7 @@ Estudios Gerenciales, 32, 387–396.
 
 ### ⏱️ Tiempo
 
-**1 hora**
+**1.5 horas**
 
 ### 📤 Entregable
 
