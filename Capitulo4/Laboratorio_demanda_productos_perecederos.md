@@ -70,12 +70,11 @@ No existe una única respuesta correcta; se evaluará la calidad de la argumenta
 
 # 📊 Rúbrica
 
-| **Nivel** | **Descripción** | **Calificación** |
-|---|---|---|
-| 🟢 **Sobresaliente** | Analiza correctamente el caso de estudio, interpreta los resultados de los métodos de pronóstico y sustenta sus respuestas con evidencia. Relaciona los resultados con decisiones pertinentes para el problema. | **4.4 – 5.0** |
-| 🟡 **Competente** | Comprende la metodología y los principales resultados, aunque algunas respuestas presentan interpretaciones o justificaciones parciales. | **3.4 – 4.3** |
-| 🔴 **En desarrollo** | Presenta dificultades para interpretar los datos, los métodos o los resultados. Las respuestas son principalmente descriptivas y presentan poca argumentación sustentada en evidencia. | **2.5 – 3.3** |
-
+| **Criterio** | **Acciones observables** | 🔴 **No cumple** | 🟡 **Cumple parcialmente** | 🟢 **Cumple por completo** |
+|---|---|---|---|---|
+| **Análisis del problema y los datos** | Identifica el propósito del pronóstico. Explica la selección de la cámara frigorífica y de los productos AP-1 y NE-2. Sustenta con evidencia del artículo. | No identifica correctamente el propósito ni sustenta la selección de los datos. | Identifica el propósito y explica parcialmente la selección de los datos, pero la sustentación es incompleta. | Identifica el propósito, explica la selección de los datos y sustenta sus afirmaciones con evidencia del artículo. |
+| **Análisis de los métodos y resultados** | Compara las técnicas de pronóstico. Identifica las técnicas con mejor desempeño. Utiliza los resultados para sustentar la selección. | No compara las técnicas ni identifica correctamente los resultados. | Compara las técnicas e identifica parte de los resultados, pero la sustentación es parcial. | Compara las técnicas, identifica correctamente los mejores resultados y sustenta la selección con evidencia. |
+| **Toma de decisiones** | Propone dos decisiones. Relaciona cada decisión con los resultados obtenidos. Justifica su pertinencia para el problema. | No propone decisiones sustentadas en los resultados. | Propone decisiones relacionadas con el problema, pero su relación con la evidencia o su justificación es parcial. | Propone dos decisiones, las relaciona con evidencia del estudio y justifica su pertinencia para el problema. |
 ---
 
 > **Reflexión:** En el análisis de series de tiempo no basta con obtener un pronóstico. Es necesario comprender los datos, comparar alternativas, evaluar los resultados y utilizar la evidencia obtenida para tomar decisiones.
