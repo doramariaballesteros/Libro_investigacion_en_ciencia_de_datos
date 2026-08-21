@@ -1,10 +1,11 @@
 # 📘 Investigación en Ciencia de Datos
 
-> **Repositorio oficial del libro**
->
-> **Investigación en Ciencia de Datos**  
-> **Dora María Ballesteros**  
-> **Editorial Redipe, 2026**
+> **Repositorio oficial del libro**  
+> Dora María Ballesteros  
+> Primera edición, 2026  
+> ISBN: 978-1-957395-63-0
+
+> 🔗 **[Consultar el libro en Editorial REDIPE](https://editorial.redipe.org/index.php/1/catalog/book/245)**
 
 ---
 
