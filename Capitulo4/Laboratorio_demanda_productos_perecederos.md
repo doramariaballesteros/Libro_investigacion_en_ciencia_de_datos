@@ -18,7 +18,7 @@ Estudios Gerenciales, 32, 387–396.
 
 ### 👥 Modalidad
 
-**Trabajo en parejas**
+**Trabajo en grupos de 2 - 3 personas**
 
 ### ⏱️ Tiempo
 
