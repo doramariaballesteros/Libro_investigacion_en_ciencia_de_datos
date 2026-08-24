@@ -32,35 +32,27 @@ Un único documento en formato **PDF** con las respuestas argumentadas.
 
 # Actividad
 
-## 1. Series de tiempo y datos
+## 1. Comprensión de las series de tiempo y los datos
 
 **1.** Analiza en qué casos se utilizan los métodos de **proyección histórica** y cuáles son los componentes que pueden encontrarse en este tipo de datos. Para el caso de estudio presentado, identifica cuántos periodos conforman la serie de tiempo y a qué corresponde cada periodo.
 
 **2.** Analiza los datos utilizados en el caso de estudio. ¿Qué se busca predecir mediante las series de tiempo?, ¿todos los productos presentan el mismo volumen o comportamiento de movimiento? Explica qué diferencias encuentras entre los productos analizados.
 
----
-
-## 2. Métodos de pronóstico
-
-**3.** Lee y explica con tus propias palabras la **ecuación (1)** correspondiente al promedio móvil simple. ¿Cómo se obtiene el pronóstico a partir de los datos históricos?
-
-**4.** Compara este procedimiento con el **promedio móvil ponderado de la ecuación (2)**. ¿Cuál es la principal diferencia entre ambos métodos y qué utilidad consideras que tiene asignar diferentes pesos a los datos históricos?
+**3.** Analiza la selección de los productos **AP-1 y NE-2**. ¿Por qué los autores realizan el seguimiento específicamente sobre estos productos y por qué consideras que son representativos del caso de estudio? Sustenta tu respuesta con evidencia del artículo.
 
 ---
 
-## 3. Evaluación del pronóstico
+## 2. Comprensión de los métodos de pronóstico y evaluación
 
-**5.** Explica cómo se calcula la **Desviación Media Absoluta (DMA)** presentada en el artículo. ¿Qué información utiliza para su cálculo y qué permite conocer acerca del desempeño de un pronóstico?
+**4.** Lee y explica con tus propias palabras la **ecuación (1)** correspondiente al promedio móvil simple. ¿Cómo se obtiene el pronóstico a partir de los datos históricos?
 
----
+**5.** Compara este procedimiento con el **promedio móvil ponderado de la ecuación (2)**. ¿Cuál es la principal diferencia entre ambos métodos y qué utilidad consideras que tiene asignar diferentes pesos a los datos históricos?
 
-## 4. Caso de estudio
-
-**6.** Analiza la selección de los productos **AP-1 y NE-2**. ¿Por qué los autores realizan el seguimiento específicamente sobre estos productos y por qué consideras que son representativos del caso de estudio? Sustenta tu respuesta con evidencia del artículo.
+**6.** Explica cómo se calcula la **Desviación Media Absoluta (DMA)** presentada en el artículo. ¿Qué información utiliza para su cálculo y qué permite conocer acerca del desempeño de un pronóstico?
 
 ---
 
-## 5. Análisis de resultados
+## 3. Análisis de resultados
 
 **7.** Analiza las **Tablas 4 y 5**, correspondientes a los pronósticos de ingreso y egreso del producto NE-2 para las semanas 53 a 56.
 
@@ -70,6 +62,8 @@ A partir de la información presentada:
 - analiza las diferencias entre los resultados obtenidos con las técnicas de pronóstico;
 - identifica qué técnica seleccionan los autores para el pronóstico de ingresos y cuál para el pronóstico de egresos;
 - explica qué evidencia utilizan para realizar esta selección.
+
+No te limites a describir los valores de las tablas. **Analiza qué significan los resultados y construye una explicación a partir de la evidencia presentada en el artículo.**
 
 > No te limites a describir los valores de las tablas. Analiza qué significan los resultados y construye una explicación a partir de la evidencia presentada en el artículo.
 ---
