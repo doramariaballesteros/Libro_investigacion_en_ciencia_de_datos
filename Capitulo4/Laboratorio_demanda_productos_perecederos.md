@@ -71,7 +71,7 @@ A partir de la información presentada:
 - identifica qué técnica seleccionan los autores para el pronóstico de ingresos y cuál para el pronóstico de egresos;
 - explica qué evidencia utilizan para realizar esta selección.
 
-No te limites a describir los valores de las tablas. **Analiza qué significan los resultados y construye una explicación a partir de la evidencia presentada en el artículo.**
+No te limites a describir los valores de las tablas. Analiza qué significan los resultados y construye una explicación a partir de la evidencia presentada en el artículo.
 ---
 
 # 📊 Rúbrica
