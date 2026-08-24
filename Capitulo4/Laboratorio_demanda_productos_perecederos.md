@@ -4,7 +4,7 @@
 
 ### 🎯 Objetivo
 
-Analizar un caso de estudio de series de tiempo a partir de los datos, los métodos de pronóstico y los resultados presentados en el artículo, construyendo explicaciones a partir de la lectura y el análisis de la información.
+Realizar una **primera aproximación en frío a las series de tiempo**, analizando un caso de estudio antes de abordar formalmente sus conceptos. A partir de la lectura del artículo, interpreta los datos, las ecuaciones, los métodos de pronóstico y los resultados, construyendo explicaciones desde tu comprensión inicial.
 
 ---
 
@@ -44,25 +44,25 @@ Un único documento en formato **PDF** con las respuestas argumentadas.
 
 **3.** Lee y explica con tus propias palabras la **ecuación (1)** correspondiente al promedio móvil simple. ¿Cómo se obtiene el pronóstico a partir de los datos históricos?
 
-Compara este procedimiento con el **promedio móvil ponderado de la ecuación (2)**. ¿Cuál es la principal diferencia entre ambos métodos y qué utilidad consideras que tiene asignar diferentes pesos a los datos históricos?
+**4.** Compara este procedimiento con el **promedio móvil ponderado de la ecuación (2)**. ¿Cuál es la principal diferencia entre ambos métodos y qué utilidad consideras que tiene asignar diferentes pesos a los datos históricos?
 
 ---
 
 ## 3. Evaluación del pronóstico
 
-**4.** Explica cómo se calcula la **Desviación Media Absoluta (DMA)** presentada en el artículo. ¿Qué información utiliza para su cálculo y qué permite conocer acerca del desempeño de un pronóstico?
+**5.** Explica cómo se calcula la **Desviación Media Absoluta (DMA)** presentada en el artículo. ¿Qué información utiliza para su cálculo y qué permite conocer acerca del desempeño de un pronóstico?
 
 ---
 
 ## 4. Caso de estudio
 
-**5.** Analiza la selección de los productos **AP-1 y NE-2**. ¿Por qué los autores realizan el seguimiento específicamente sobre estos productos y por qué consideras que son representativos del caso de estudio? Sustenta tu respuesta con evidencia del artículo.
+**6.** Analiza la selección de los productos **AP-1 y NE-2**. ¿Por qué los autores realizan el seguimiento específicamente sobre estos productos y por qué consideras que son representativos del caso de estudio? Sustenta tu respuesta con evidencia del artículo.
 
 ---
 
 ## 5. Análisis de resultados
 
-**6.** Analiza las **Tablas 4 y 5**, correspondientes a los pronósticos de ingreso y egreso del producto NE-2 para las semanas 53 a 56.
+**7.** Analiza las **Tablas 4 y 5**, correspondientes a los pronósticos de ingreso y egreso del producto NE-2 para las semanas 53 a 56.
 
 A partir de la información presentada:
 
