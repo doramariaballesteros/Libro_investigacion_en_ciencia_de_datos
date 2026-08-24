@@ -4,7 +4,7 @@
 
 ### 🎯 Objetivo
 
-Analizar críticamente un caso de estudio de series de tiempo, identificando las decisiones relacionadas con los datos, los métodos de pronóstico, la evaluación de los resultados y la toma de decisiones.
+Analizar un caso de estudio de series de tiempo a partir de los datos, los métodos de pronóstico y los resultados presentados en el artículo, construyendo explicaciones a partir de la lectura y el análisis de la información.
 
 ---
 
@@ -32,49 +32,54 @@ Un único documento en formato **PDF** con las respuestas argumentadas.
 
 # Actividad
 
-## 1. Datos
+## 1. Series de tiempo y datos
 
-**1.** Analiza el problema abordado en el caso de estudio. ¿Qué información busca obtener la empresa mediante el pronóstico de las series de tiempo y para qué necesita esta información?
+**1.** Analiza en qué casos se utilizan los métodos de **proyección histórica** y cuáles son los componentes que pueden encontrarse en este tipo de datos. Para el caso de estudio presentado, identifica cuántos periodos conforman la serie de tiempo y a qué corresponde cada periodo.
 
-**2.** Analiza la selección de los datos utilizados en el estudio. ¿Por qué los autores seleccionaron la cámara frigorífica n.º 2 y los productos AP-1 y NE-2? Sustenta tu respuesta con evidencia del artículo.
-
----
-
-## 2. Métodos
-
-**3.** Compara las cuatro técnicas de pronóstico utilizadas en el estudio. Explica brevemente qué diferencia existe en la forma como cada una utiliza la información histórica de la serie.
+**2.** Analiza los datos utilizados en el caso de estudio. ¿Qué se busca predecir mediante las series de tiempo?, ¿todos los productos presentan el mismo volumen o comportamiento de movimiento? Explica qué diferencias encuentras entre los productos analizados.
 
 ---
 
-## 3. Evaluación
+## 2. Métodos de pronóstico
 
-**4.** Analiza los resultados obtenidos para los productos AP-1 y NE-2. Para cada serie de ingreso y egreso, identifica qué técnica presenta el mejor desempeño y qué evidencia utilizan los autores para seleccionarla.
+**3.** Lee y explica con tus propias palabras la **ecuación (1)** correspondiente al promedio móvil simple. ¿Cómo se obtiene el pronóstico a partir de los datos históricos?
 
-**5.** A partir de los resultados anteriores, ¿consideras que existe una técnica de pronóstico que pueda considerarse la mejor para todas las series? Sustenta tu respuesta con evidencia de los resultados experimentales.
+Compara este procedimiento con el **promedio móvil ponderado de la ecuación (2)**. ¿Cuál es la principal diferencia entre ambos métodos y qué utilidad consideras que tiene asignar diferentes pesos a los datos históricos?
 
 ---
 
-## 4. Toma de decisiones
+## 3. Evaluación del pronóstico
 
-**6.** Analiza los pronósticos de ingreso y egreso obtenidos para las semanas 53 a 56. Si fueras responsable de la planeación de la empresa, ¿qué decisiones tomarías a partir de estos resultados?
+**4.** Explica cómo se calcula la **Desviación Media Absoluta (DMA)** presentada en el artículo. ¿Qué información utiliza para su cálculo y qué permite conocer acerca del desempeño de un pronóstico?
 
-Propón **dos decisiones** y, para cada una:
+---
 
-- identifica la evidencia del estudio que utilizarías;
-- explica la decisión que tomarías;
-- sustenta por qué sería adecuada.
+## 4. Caso de estudio
 
-No existe una única respuesta correcta; se evaluará la calidad de la argumentación y el uso de evidencia presentada en el artículo.
+**5.** Analiza la selección de los productos **AP-1 y NE-2**. ¿Por qué los autores realizan el seguimiento específicamente sobre estos productos y por qué consideras que son representativos del caso de estudio? Sustenta tu respuesta con evidencia del artículo.
 
+---
+
+## 5. Análisis de resultados
+
+**6.** Analiza las **Tablas 4 y 5**, correspondientes a los pronósticos de ingreso y egreso del producto NE-2 para las semanas 53 a 56.
+
+A partir de la información presentada:
+
+- identifica qué se está comparando;
+- analiza las diferencias entre los resultados obtenidos con las técnicas de pronóstico;
+- identifica qué técnica seleccionan los autores para el pronóstico de ingresos y cuál para el pronóstico de egresos;
+- explica qué evidencia utilizan para realizar esta selección.
+
+No te limites a describir los valores de las tablas. **Analiza qué significan los resultados y construye una explicación a partir de la evidencia presentada en el artículo.**
 ---
 
 # 📊 Rúbrica
 
 | **Criterio** | **Acciones observables** | 🔴 **No cumple** | 🟡 **Cumple parcialmente** | 🟢 **Cumple por completo** |
 |---|---|---|---|---|
-| **Análisis del problema y los datos** | Identifica el propósito del pronóstico. Explica la selección de la cámara frigorífica y de los productos AP-1 y NE-2. Sustenta con evidencia del artículo. | No identifica correctamente el propósito ni sustenta la selección de los datos. | Identifica el propósito y explica parcialmente la selección de los datos, pero la sustentación es incompleta. | Identifica el propósito, explica la selección de los datos y sustenta sus afirmaciones con evidencia del artículo. |
-| **Análisis de los métodos y resultados** | Compara las técnicas de pronóstico. Identifica las técnicas con mejor desempeño. Utiliza los resultados para sustentar la selección. | No compara las técnicas ni identifica correctamente los resultados. | Compara las técnicas e identifica parte de los resultados, pero la sustentación es parcial. | Compara las técnicas, identifica correctamente los mejores resultados y sustenta la selección con evidencia. |
-| **Toma de decisiones** | Propone dos decisiones. Relaciona cada decisión con los resultados obtenidos. Justifica su pertinencia para el problema. | No propone decisiones sustentadas en los resultados. | Propone decisiones relacionadas con el problema, pero su relación con la evidencia o su justificación es parcial. | Propone dos decisiones, las relaciona con evidencia del estudio y justifica su pertinencia para el problema. |
----
+| **Comprensión de las series de tiempo y los datos** | Explica cuándo se utilizan métodos de proyección histórica y reconoce los componentes de una serie de tiempo. Identifica los periodos analizados y qué se busca predecir. Analiza la selección de los productos AP-1 y NE-2 utilizando evidencia del artículo. | No explica adecuadamente las características de las series de tiempo ni identifica los datos y el propósito del pronóstico. No sustenta la selección de los productos. | Explica parcialmente las características de las series de tiempo e identifica parte de los datos y del propósito del pronóstico. La explicación sobre la selección de los productos o su sustentación es incompleta. | Explica las características de las series de tiempo, identifica los periodos y el propósito del pronóstico, y analiza la selección de los productos AP-1 y NE-2 sustentándose en evidencia del artículo. |
+| **Comprensión de los métodos de pronóstico y evaluación** | Interpreta la ecuación del promedio móvil simple. Compara el promedio móvil simple con el promedio móvil ponderado. Explica la utilidad de los pesos. Explica cómo se calcula la DMA y qué información proporciona sobre el pronóstico. | No interpreta correctamente los métodos ni explica el cálculo y la utilidad de la DMA. | Interpreta parcialmente los métodos y reconoce algunas de sus diferencias. Explica de manera incompleta el cálculo o la utilidad de la DMA. | Interpreta el promedio móvil simple, lo compara con el promedio móvil ponderado y explica la utilidad de los pesos. Explica cómo se calcula la DMA y qué permite conocer sobre el desempeño del pronóstico. |
+| **Análisis de resultados** | Analiza las Tablas 4 y 5. Identifica qué se compara y las diferencias entre los resultados. Identifica las técnicas seleccionadas por los autores para ingresos y egresos. Sustenta la selección utilizando evidencia del artículo. | No interpreta adecuadamente las tablas ni identifica las técnicas seleccionadas o la evidencia que sustenta la selección. | Interpreta parte de los resultados e identifica las técnicas seleccionadas, pero el análisis de las diferencias o la sustentación con evidencia es incompleto. | Analiza los resultados de las Tablas 4 y 5, identifica las diferencias entre las técnicas y explica las selecciones realizadas por los autores utilizando evidencia del artículo. |
 
-> **Reflexión:** En el análisis de series de tiempo no basta con obtener un pronóstico. Es necesario comprender los datos, comparar alternativas, evaluar los resultados y utilizar la evidencia obtenida para tomar decisiones.
+---
