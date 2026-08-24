@@ -4,7 +4,7 @@
 
 ### 🎯 Objetivo
 
-Realizar una **primera aproximación en frío a las series de tiempo**, analizando un caso de estudio antes de abordar formalmente sus conceptos. A partir de la lectura del artículo, interpreta los datos, las ecuaciones, los métodos de pronóstico y los resultados, construyendo explicaciones desde tu comprensión inicial.
+Realizar una primera ***aproximación en frío** a las series de tiempo, analizando un caso de estudio antes de abordar formalmente sus conceptos. A partir de la lectura del artículo, interpreta los datos, las ecuaciones, los métodos de pronóstico y los resultados, construyendo explicaciones desde tu comprensión inicial, sin partir de conocimientos formales previos sobre el tema.
 
 ---
 
