@@ -1,6 +1,6 @@
 # 🧩 Reto de Clase: De Datos Estructurados a Series de Tiempo
 
-A partir del dataset de COVID-19 de la Alcaldía de Bogotá, transforma los datos estructurados en un dataset de **series de tiempo multivariado** y realiza un **EDA temporal**.
+A partir del dataset de COVID-19 de la Alcaldía de Bogotá (disponible en el Capitulo 3 de este repositorio, Caso 1), transforma los datos estructurados en un dataset de **series de tiempo multivariado** y realiza un **EDA temporal**.
 
 ![Reto de Clase](RETO_CLASE.png)
 
