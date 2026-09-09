@@ -14,13 +14,16 @@ Este directorio contiene los notebooks utilizados en el **Caso de Estudio 1: Cli
    `clima_eda.csv`
 
 2. `Capitulo4_FE_1_(rolling)_Clima.ipynb`  
-   Aplica **Feature Engineering mediante Rolling** y compara el desempeño del modelo con el obtenido antes de aplicar FE.
+   Aplica **Feature Engineering mediante Rolling** a partir de los patrones identificados durante el EDA y realiza el modelamiento con el nuevo dataset.
 
    **Dataset de entrada:**  
    `clima_eda.csv`
 
 3. `Capitulo4_FE_2_(temporal+lag)_Clima.ipynb`  
-   Genera **features temporales** y **Lags** a partir de los patrones identificados durante el EDA.
+   Genera **features temporales y Lags** a partir de los patrones identificados durante el EDA y realiza el modelamiento con el nuevo dataset.
+
+   **Dataset de entrada:**  
+   `clima_eda.csv`
 
    **Dataset de entrada:**  
    `clima_eda.csv`
