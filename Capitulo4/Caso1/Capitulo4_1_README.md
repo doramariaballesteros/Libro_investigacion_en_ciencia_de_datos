@@ -33,9 +33,6 @@ Este directorio contiene los notebooks utilizados en el **Caso de Estudio 1: Cli
    **Dataset de entrada:**  
    `clima_eda.csv`
 
-   **Dataset de entrada:**  
-   `clima_eda.csv`
-
 4. `Capitulo4_FE_3_(junto)_Clima.ipynb`  
    Integra los mejores *features* obtenidos mediante **Rolling y Lags**, junto con **hora** y **día de la semana**, para entrenar y comparar nuevos modelos.
 
