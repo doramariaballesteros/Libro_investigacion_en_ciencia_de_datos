@@ -2,6 +2,12 @@
 
 Este directorio contiene los notebooks utilizados en el **Caso de Estudio 1: Clima** del Capítulo 4 del libro *Investigación en Ciencia de Datos*.
 
+> Dora María Ballesteros  
+> Primera edición, 2026  
+> ISBN: 978-1-957395-63-0
+
+> 🔗 **[Consultar el libro en Editorial REDIPE](https://editorial.redipe.org/index.php/1/catalog/book/245)**
+
 ## Orden recomendado de ejecución
 
 1. `Capitulo4_EDA_clima.ipynb`  
