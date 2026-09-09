@@ -8,6 +8,8 @@ Este directorio contiene los notebooks utilizados en el **Caso de Estudio 1: Cli
 
 > 🔗 **[Consultar el libro en Editorial REDIPE](https://editorial.redipe.org/index.php/1/catalog/book/245)**
 
+>💡 **Nota:** Los códigos disponibles en este repositorio han sido **actualizados y complementados** con respecto a los presentados en la primera edición del libro. Estas actualizaciones conservan la **esencia y propósito de los códigos originales**, incorporando ajustes orientados a mejorar su desarrollo, explicación y aplicación.
+
 ## Orden recomendado de ejecución
 
 1. `Capitulo4_EDA_clima.ipynb`  
