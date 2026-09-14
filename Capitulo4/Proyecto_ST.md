@@ -67,11 +67,15 @@ Para responder esta pregunta podría construirse una variable objetivo:
 \[
 y_t =
 \begin{cases}
-1, & P_{t+1} > P_t \qquad \text{Sube}\\
-0, & P_{t+1} \leq P_t \qquad \text{No sube}
+1, & \text{si } P_{t+1} > P_t \\
+0, & \text{si } P_{t+1} \leq P_t
 \end{cases}
 \]
 
+donde:
+
+- \(y_t = 1\): el precio **sube** en el siguiente periodo.
+- \(y_t = 0\): el precio **no sube** en el siguiente periodo.
 De esta manera, el modelo utilizaría la información disponible hasta el instante \(t\) para predecir el comportamiento del precio en \(t+1\).
 
 > 💡 **Importante**
