@@ -56,7 +56,7 @@ El periodo de análisis deberá proporcionar una cantidad suficiente de observac
 
 Suponga que se selecciona un dataset financiero que contiene el precio de cierre de un activo en diferentes instantes de tiempo.
 
-El dataset contiene el precio \(P_t\), pero **no contiene una variable que indique si el precio aumentará en el siguiente periodo**.
+El dataset contiene el precio $P_t$, pero **no contiene una variable que indique si el precio aumentará en el siguiente periodo**.
 
 Una posible pregunta de predicción sería:
 
