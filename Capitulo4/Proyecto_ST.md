@@ -28,19 +28,31 @@ Posteriormente, deberán ampliar la metodología mediante la incorporación de u
 
 ---
 
-## 🎯 Problema a resolver
+## 🔎 Selección del dataset
 
-Cada grupo deberá seleccionar un **dataset real de series de tiempo** y, a partir de sus características, formular un problema de clasificación.
+Cada grupo deberá seleccionar una serie de tiempo disponible en:
 
-El proyecto deberá responder, como mínimo, las siguientes preguntas:
+👉 [FRED – Federal Reserve Economic Data](https://fred.stlouisfed.org/)
 
-- ¿Qué información contiene el dataset?
-- ¿Qué comportamiento de la serie de tiempo se desea predecir?
-- ¿Cuál será la variable objetivo (*target*)?
-- ¿Es necesario construirla a partir de las variables disponibles?
-- ¿Qué información histórica puede aportar a la predicción?
+El dataset seleccionado deberá contener:
 
-### 💡 Ejemplo ilustrativo
+- Una **variable temporal**.
+- Una **única variable numérica de interés** (*feature*).
+
+La variable temporal no será considerada un *feature* original del dataset.
+
+Cada grupo deberá identificar y documentar:
+
+- Nombre y descripción de la serie seleccionada.
+- Unidad de medida.
+- Frecuencia de muestreo.
+- Periodo de tiempo seleccionado.
+- Número de observaciones disponibles.
+
+El periodo de análisis deberá proporcionar una cantidad suficiente de observaciones para desarrollar los experimentos de Ingeniería de Características. Por esta razón, su extensión deberá seleccionarse teniendo en cuenta la frecuencia de muestreo de la serie.
+
+
+### 💡 Construcción de la salida
 
 Suponga que se selecciona un dataset financiero que contiene el precio de cierre de un activo en diferentes instantes de tiempo.
 
