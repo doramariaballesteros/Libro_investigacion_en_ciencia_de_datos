@@ -90,6 +90,25 @@ A partir de la gráfica de ACF:
 > 💡 **Importante:** no se busca únicamente generar la gráfica de ACF. Analiza qué información proporciona sobre la dependencia temporal de la serie y cómo podría utilizarse posteriormente en la Ingeniería de Características.
 
 
+## 🛠️ Ingeniería de Características
+
+A partir del análisis temporal y de dependencia realizado en las etapas anteriores, construye **nuevos *features* que representen información del comportamiento pasado de la serie**.
+
+Genera:
+
+* **4 *features* de tipo *Rolling***, utilizando cuatro tamaños de ventana diferentes.
+* **4 *features* de tipo *Lag***, utilizando cuatro retardos temporales diferentes.
+
+Los valores seleccionados para las **ventanas de *Rolling*** y los ***lags*** deben estar justificados a partir de las características de la serie, su frecuencia de muestreo y los resultados obtenidos durante el análisis exploratorio.
+
+Para los *features* de tipo *Rolling*, utiliza la **media móvil (*rolling mean*)** como estadístico de la ventana.
+
+En la construcción de los nuevos *features*, asegúrate de utilizar únicamente **información disponible hasta el instante de tiempo correspondiente**, evitando incorporar información futura que pueda producir *data leakage*.
+
+> 💡 **Importante:** los tamaños de las ventanas y los valores de los *lags* no deben seleccionarse arbitrariamente. Explica qué información temporal busca representar cada uno y por qué puede resultar relevante para el problema de predicción.
+
+
+
 
 ### 💡 Construcción de la salida
 
