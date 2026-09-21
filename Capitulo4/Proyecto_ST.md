@@ -73,6 +73,22 @@ Cuando identifiques comportamientos diferentes, delimita los **rangos de tiempo*
 
 > 💡 **Importante:** no se busca únicamente visualizar la serie. El objetivo es interpretar su comportamiento temporal y determinar si una única tendencia describe adecuadamente todo el periodo analizado o si existen diferentes etapas en su evolución.
 
+## 🔄 Dependencia temporal
+
+Como siguiente etapa, analiza la **dependencia de los valores actuales de la serie respecto a sus valores pasados**.
+
+Calcula y grafica la **Función de Autocorrelación (ACF)** para evaluar la relación entre la serie y sus valores anteriores a diferentes *lags* o retardos temporales.
+
+A partir de la gráfica de ACF:
+
+* Identifica los *lags* que presentan una **autocorrelación significativa**.
+* Analiza cómo cambia la autocorrelación a medida que aumenta el *lag*.
+* Determina si la influencia de los valores pasados **disminuye rápidamente o se mantiene durante varios retardos**.
+* Identifica posibles patrones temporales que puedan sugerir **periodicidad o repetición** en el comportamiento de la serie.
+* Interpreta los *lags* identificados teniendo en cuenta la **frecuencia de muestreo** de la serie. Por ejemplo, un *lag* de 12 en una serie mensual representa un periodo de un año.
+
+> 💡 **Importante:** no se busca únicamente generar la gráfica de ACF. Analiza qué información proporciona sobre la dependencia temporal de la serie y cómo podría utilizarse posteriormente en la Ingeniería de Características.
+
 
 
 ### 💡 Construcción de la salida
