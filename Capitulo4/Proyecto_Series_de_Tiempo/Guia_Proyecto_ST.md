@@ -165,7 +165,15 @@ Una vez construida la variable de salida, **analiza su distribución y determina
 
 A partir de los *features* construidos y de la variable objetivo definida, desarrolla **seis experimentos** utilizando el mismo algoritmo de clasificación y las mismas condiciones de entrenamiento y evaluación.
 
-Realiza la **partición de los datos en entrenamiento y prueba respetando el orden temporal de las observaciones**. No realices una partición aleatoria de la serie.
+> 💡 **Recomendación para la división Train/Test:**  
+> La división de los datos debe respetar siempre el **orden temporal** de las observaciones. Antes de definir el porcentaje de Train y Test:
+>
+> - Grafica la serie indicando visualmente los periodos correspondientes a **Train y Test**.
+> - Analiza qué **comportamientos temporales** de la serie quedan incluidos en cada conjunto.
+> - Verifica el **número de observaciones** y la **distribución de las clases** en Train y Test.
+> - Selecciona y justifica el porcentaje de división de acuerdo con las características de la serie.
+>
+> El conjunto de Test debe contener un número suficiente de observaciones que permita evaluar el modelo considerando el comportamiento temporal de la serie. Una vez seleccionada la división, **mantén el mismo Train/Test en todos los experimentos**.
 
 Mantén la **misma partición de entrenamiento y prueba en los seis experimentos** para garantizar que los resultados obtenidos sean comparables.
 
