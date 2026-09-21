@@ -146,18 +146,18 @@ Por lo tanto, la clase será \(y_t=1\) si en el siguiente periodo el precio **su
 
 > 💡 **Importante:** el umbral del **1 % es únicamente ilustrativo**. Cada grupo deberá definir y justificar el criterio utilizado para construir su variable objetivo, teniendo en cuenta las características y el comportamiento de la serie seleccionada.
 
-## 🤖 Modelamiento y experimentación
+## 🤖 6. Modelamiento y experimentación
 
-A partir de los *features* construidos y de la variable objetivo definida, desarrolla **cinco experimentos** utilizando el mismo algoritmo de clasificación y las mismas condiciones de entrenamiento y evaluación.
+A partir de los *features* construidos y de la variable objetivo definida, desarrolla **seis experimentos** utilizando el mismo algoritmo de clasificación y las mismas condiciones de entrenamiento y evaluación.
 
 ### 🧪 Experimento 1 – Baseline
 
-Construye un modelo utilizando únicamente:
+Construye un modelo utilizando:
 
 * *Feature* original.
 * Variable de salida.
 
-Este experimento corresponde al **Baseline** y permitirá establecer un punto de referencia para evaluar posteriormente el aporte de la Ingeniería de Características.
+Este experimento corresponde al **Baseline** y establece el punto de referencia para evaluar el aporte de la Ingeniería de Características.
 
 ### 🧪 Experimento 2 – Rolling
 
@@ -179,51 +179,67 @@ Construye un modelo utilizando:
 
 Analiza el aporte de la información correspondiente a valores anteriores de la serie respecto al **Baseline**.
 
-### 🧪 Experimento 4 – Rolling + Lags
+### 🧪 Experimento 4 – Expanding
+
+Consulta el funcionamiento de ***Expanding*** aplicado a Series de Tiempo y analiza sus diferencias respecto a *Rolling*.
+
+A partir de la consulta:
+
+* Construye **un *feature* de tipo Expanding**.
+* Define y justifica la forma en que se calcula.
+* Explica qué información temporal representa.
+* Asegúrate de utilizar únicamente información disponible hasta el instante correspondiente, evitando *data leakage*.
+
+Construye un modelo utilizando:
+
+* *Feature* original.
+* 1 *feature* de tipo *Expanding*.
+* Variable de salida.
+
+Analiza el aporte del nuevo *feature* respecto al **Baseline**.
+
+### 🧪 Experimento 5 – Integración de *features*
 
 Construye un modelo utilizando:
 
 * *Feature* original.
 * 4 *features* de tipo *Rolling*.
 * 4 *features* de tipo *Lag*.
+* 1 *feature* de tipo *Expanding*.
 * Variable de salida.
 
-Analiza si la combinación de los dos tipos de Ingeniería de Características mejora el desempeño del modelo.
+Analiza el comportamiento del modelo cuando se integra toda la información generada mediante Ingeniería de Características.
 
-### 🧪 Experimento 5 – Selección por importancia de características
+### 🧪 Experimento 6 – Selección por importancia de características
 
-A partir de la **importancia de características** obtenida en los experimentos anteriores, identifica:
+A partir de la **importancia de características** obtenida en los experimentos anteriores, selecciona:
 
 * El *feature* de tipo **Rolling con mayor importancia**.
 * El *feature* de tipo **Lag con mayor importancia**.
+* El *feature* de tipo **Expanding**.
 
-Construye un nuevo modelo utilizando únicamente:
+Construye un modelo utilizando únicamente estos **tres *features*** y la variable de salida. En este experimento **no utilices el *feature* original**.
 
-* El *feature* de tipo Rolling seleccionado.
-* El *feature* de tipo Lag seleccionado.
-* La variable de salida.
+Analiza si una representación reducida, construida exclusivamente a partir de información temporal, permite obtener un desempeño comparable o superior al de los experimentos anteriores.
 
-En este experimento **no utilices el *feature* original**.
+### 📊 Evaluación y análisis
 
-Compara los resultados con los experimentos anteriores y analiza si estos dos *features*, seleccionados a partir de su importancia, permiten conservar o mejorar la capacidad predictiva del modelo utilizando una representación más reducida de la información temporal.
-
-### 📊 Evaluación de los experimentos
-
-Para cada experimento reporta:
+Para cada uno de los seis experimentos reporta:
 
 * **Matriz de confusión**.
 * **Accuracy**.
 * **Precision por clase**.
 * **Recall por clase**.
 * **F1-score por clase**.
+* **Importancia de características**, cuando corresponda.
 
-Utiliza las **mismas condiciones de entrenamiento y evaluación** en los cinco experimentos para que los resultados obtenidos sean comparables.
+Utiliza las **mismas condiciones de entrenamiento y evaluación** en todos los experimentos para garantizar que los resultados sean comparables.
 
-Finalmente, compara los resultados de los cinco experimentos y responde:
+Finalmente, compara los seis experimentos y responde:
 
 > **¿Con cuál de las soluciones desarrolladas te quedarías y por qué?**
 
-La respuesta debe estar sustentada en los resultados obtenidos y no únicamente en el valor de *Accuracy*. Considera el comportamiento de las métricas por clase, la matriz de confusión y la cantidad de *features* utilizados por cada solución.
+Justifica la respuesta a partir de la matriz de confusión, las métricas obtenidas para cada clase, la importancia de características y el número de *features* utilizados. No sustentes la decisión únicamente en el valor de *Accuracy*.
 
 
 
