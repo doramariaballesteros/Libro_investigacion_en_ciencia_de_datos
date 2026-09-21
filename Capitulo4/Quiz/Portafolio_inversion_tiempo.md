@@ -39,148 +39,63 @@ La siguiente tabla presenta el valor del portafolio, expresado en **pesos colomb
 > **Nota:** Los valores de las columnas `31/03/2026`, `31/07/2026` y `Diferencia` están expresados en pesos colombianos (COP).
 ---
 
-# 🔎 E0 – Comprensión de los datos
+# 🔎 E0 – Preparación de los datos
 
-Investiga el significado de los códigos de moneda presentes en el dataset:
+Investiga el significado de los códigos:
 
 `AUD`, `BRL`, `CAD`, `CLP`, `COP`, `COU`, `EUR`, `GBP`, `JPY`, `MXN`, `MXV` y `USD`.
 
-Construye una tabla que incluya:
-
-| Código | Moneda / Unidad | País o referencia |
-|---|---|---|
-| AUD | | |
-| BRL | | |
-| ... | | |
-| USD | | |
-
-A partir de esta información, clasifica las posiciones del portafolio en dos grupos:
+Construye un `DataFrame` con la información suministrada y agrega una nueva columna que clasifique cada posición como:
 
 - **Nacional**
 - **Internacional**
 
-Justifica el criterio utilizado para realizar esta clasificación.
-
 ---
 
-# 🧹 E1 – Preparación de los datos
+# 📊 E1 – Análisis del portafolio
 
-Construye un `DataFrame` con la información suministrada.
+Calcula el **valor total del portafolio** para cada fecha y determina:
 
-Realiza las transformaciones necesarias para que los valores monetarios puedan utilizarse como variables numéricas en Python.
+- Cambio absoluto y porcentual del portafolio total.
+- Valor de la inversión nacional e internacional en cada fecha.
+- Variación porcentual de la inversión nacional e internacional.
 
-Verifica:
-
-- Tipos de datos.
-- Valores faltantes.
-- Valores duplicados.
-- Consistencia de los valores.
-
-Calcula nuevamente para cada moneda:
+Calcula además la participación de cada componente:
 
 $$
-\text{Diferencia}
-=
-\text{Valor}_{31/07/2026}
--
-\text{Valor}_{31/03/2026}
-$$
-
-y su variación porcentual:
-
-$$
-\text{Variación}(\%)
-=
-\frac{
-\text{Valor}_{31/07/2026}
--
-\text{Valor}_{31/03/2026}
-}{
-\text{Valor}_{31/03/2026}
-}
-\times 100
-$$
-
-Compara los resultados obtenidos con los valores suministrados en la tabla original.
-
----
-
-# 📊 E2 – Análisis del portafolio
-
-Calcula el **valor total del portafolio** para cada una de las dos fechas.
-
-Determina:
-
-- Cambio absoluto del portafolio.
-- Cambio porcentual del portafolio.
-- Valor de las inversiones nacionales en cada fecha.
-- Valor de las inversiones internacionales en cada fecha.
-- Variación porcentual de cada uno de estos dos componentes.
-
-Calcula además la participación de la inversión nacional e internacional dentro del portafolio:
-
-$$
-\text{Participación}(\%)
-=
+\text{Participación}(\%) =
 \frac{\text{Valor del componente}}
 {\text{Valor total del portafolio}}
 \times 100
 $$
 
-Compara cómo cambia la composición del portafolio entre marzo y julio de 2026.
+Construye una **visualización** que permita comparar la participación de la inversión nacional e internacional en las dos fechas.
 
 ---
 
-# 📈 E3 – ¿Qué explica el cambio del portafolio?
+# 🧠 E2 – Interpretación de resultados
 
-Analiza la contribución de cada moneda al cambio total del portafolio.
+A partir de los resultados obtenidos, responde:
 
-Para cada posición calcula:
+1. **¿Cómo cambió el portafolio entre marzo y julio de 2026?** Analiza tanto su valor total como la participación de la inversión nacional e internacional.
 
-$$
-\text{Contribución}_i(\%)
-=
-\frac{\text{Diferencia}_i}
-{\text{Valor total}_{31/03/2026}}
-\times 100
-$$
+2. **¿Qué componente explica principalmente el resultado global del portafolio: nacional o internacional?** Justifica tu respuesta utilizando los valores obtenidos.
 
-Ordena las monedas de acuerdo con su contribución e identifica cuáles tuvieron el mayor impacto positivo y negativo sobre el portafolio.
-
-Construye al menos **dos visualizaciones** que permitan explicar los resultados.
-
-Una de ellas deberá ser un **gráfico de cascada (*waterfall*)** que muestre:
-
-**Valor inicial del portafolio → contribución de cada moneda → valor final del portafolio**
-
-Selecciona una segunda visualización que consideres apropiada para mostrar el cambio en la composición nacional e internacional del portafolio.
+Finalmente, redacta una **conclusión general basada en los datos** que sintetice qué ocurrió con el portafolio durante el periodo analizado..
 
 ---
+# 💬 Entregable – Discusión en clase
 
-# 🧠 E4 – Interpretación de resultados
+Al finalizar la actividad, cada grupo participará en una **discusión de resultados en clase**.
 
-A partir del análisis realizado, responde:
+Utilizando los cálculos y la visualización obtenida, el grupo deberá presentar brevemente:
 
-1. **¿Qué explica el cambio en el valor total del portafolio entre marzo y julio de 2026?** Identifica los componentes que tuvieron mayor influencia en el resultado.
+- El cambio observado en el valor total del portafolio.
+- El comportamiento de la inversión nacional e internacional.
+- La principal conclusión que puede obtenerse a partir de los datos.
 
-2. **¿Por qué una moneda con una variación porcentual alta no necesariamente produce un impacto importante sobre el portafolio total?** Utiliza los resultados obtenidos para justificar tu respuesta.
+La discusión deberá estar **sustentada en los resultados obtenidos durante el análisis**.
 
-3. **¿Cómo cambió la composición del portafolio entre inversión nacional e internacional y qué efecto tuvo este cambio sobre el resultado global?**
 
-Finalmente, redacta una **conclusión general basada en los datos** que sintetice qué ocurrió con el portafolio durante el periodo analizado.
 
----
 
-# 📓 Entregable
-
-Entrega un **Notebook desarrollado en Python** que documente de manera organizada y reproducible el desarrollo completo del reto.
-
-El Notebook deberá incluir:
-
-- Preparación y validación de los datos.
-- Cálculos realizados.
-- Tablas de resultados.
-- Visualizaciones.
-- Desarrollo de los experimentos E0–E4.
-- Interpretación de los resultados.
-- Conclusión general.
