@@ -8,19 +8,19 @@
 
 ## 📖 Contexto
 
-En problemas reales de Ciencia de Datos, los datasets disponibles de Series de Tiempo no necesariamente incluyen una salida a predecir. Es decir, es frecuente encontrar datasets que contienen **mediciones, registros históricos o variables descriptivas**, pero que no incluyen directamente una variable de salida (*target*) asociada al problema que se desea resolver.
+En problemas reales de Ciencia de Datos, los datasets disponibles de Series de Tiempo no necesariamente incluyen una salida a predecir. Por ejemplo, es frecuente encontrar datasets que contienen **mediciones, registros históricos o variables descriptivas**, pero que no incluyen directamente una variable de salida (*target*) asociada al problema que se desea resolver.
 
-Esta situación puede presentarse en diferentes contextos. Por ejemplo:
+Esta situación puede presentarse en diferentes contextos, como:
 
-- 📈 **Mercados financieros y criptomonedas:** precios de apertura y cierre, valores máximos y mínimos, volumen de negociación, entre otros.
-- 🌦️ **Clima:** temperatura, humedad, radiación solar, velocidad del viento y otras variables meteorológicas.
+- 📈 **Mercados financieros y criptomonedas:** con *features* de precios de apertura y cierre, valores máximos y mínimos, volumen de negociación, entre otros.
+- 🌦️ **Clima:** con *features* de temperatura, humedad, radiación solar, velocidad del viento y otras variables meteorológicas.
 - ⚡ **Consumo energético:** registros históricos de consumo, demanda y variables temporales.
-- 🚗 **Movilidad y tráfico:** flujo vehicular, velocidad, tiempos de desplazamiento y otras mediciones.
+- 🚗 **Movilidad y tráfico:** con *features* de flujo vehicular, velocidad, tiempos de desplazamiento y otras mediciones.
 - 📡 **Sensores e IoT:** mediciones obtenidas continuamente a partir de dispositivos, máquinas o procesos.
 
-En estos casos, una de las primeras tareas consiste en **comprender los datos disponibles, formular un problema de predicción y determinar cuál será la variable que se desea predecir**.
+Por lo que, una de las primeras tareas consiste en **comprender los datos disponibles, formular un problema de predicción y determinar cuál será la variable que se desea predecir**.
 
-Por esta razón, en un proyecto de Ciencia de Datos la variable objetivo no siempre corresponde a una columna existente en el dataset. Dependiendo del problema planteado, puede ser necesario **construir el *target* a partir de la información disponible**.
+Por esta razón, en un proyecto de Ciencia de Datos con Series de Tiempo la variable objetivo no siempre corresponde a una columna existente en el dataset. Dependiendo del problema planteado, puede ser necesario **construir el *target* a partir de la información disponible**.
 
 En este proyecto, cada grupo deberá seleccionar un dataset correspondiente a una **serie de tiempo real** y desarrollar un problema de clasificación, aplicando la metodología de análisis e Ingeniería de Características (*Feature Engineering*, FE) estudiada en el **Caso de Estudio 1**.
 
@@ -50,6 +50,29 @@ Cada grupo deberá identificar y documentar:
 - Número de observaciones disponibles.
 
 El periodo de análisis deberá proporcionar una cantidad suficiente de observaciones para desarrollar los experimentos de Ingeniería de Características. Por esta razón, su extensión deberá seleccionarse teniendo en cuenta la frecuencia de muestreo de la serie.
+
+
+Las actividades a realizar se presentan a continuación:
+
+## 📈 Análisis temporal de la serie
+
+Como primera etapa, realiza una **exploración visual del comportamiento de la serie de tiempo**.
+
+Grafica la variable numérica seleccionada en función del tiempo y analiza su evolución durante el periodo considerado.
+
+A partir de la gráfica:
+
+* Identifica si existe una **tendencia general** de crecimiento, disminución o estabilidad.
+* Determina si el comportamiento de la serie **cambia a lo largo del tiempo**.
+* Identifica **rangos temporales** que presenten comportamientos particulares. Por ejemplo, periodos de varios meses o años con tendencias crecientes, decrecientes o relativamente estables.
+* Analiza la presencia de cambios importantes, máximos, mínimos o variaciones abruptas que puedan ser relevantes para comprender la dinámica de la serie.
+
+Para apoyar el análisis, utiliza una **media móvil (*rolling mean*)** que permita suavizar las variaciones de corto plazo y visualizar con mayor claridad la curva de tendencia. Selecciona y justifica el tamaño de la ventana de acuerdo con la **frecuencia de muestreo y el comportamiento de la serie**.
+
+Cuando identifiques comportamientos diferentes, delimita los **rangos de tiempo** correspondientes y describe las principales características observadas en cada uno.
+
+> 💡 **Importante:** no se busca únicamente visualizar la serie. El objetivo es interpretar su comportamiento temporal y determinar si una única tendencia describe adecuadamente todo el periodo analizado o si existen diferentes etapas en su evolución.
+
 
 
 ### 💡 Construcción de la salida
