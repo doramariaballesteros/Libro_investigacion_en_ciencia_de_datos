@@ -243,7 +243,7 @@ Justifica la respuesta a partir de la matriz de confusión, las métricas obteni
 
 ## 🧪 RÚBRICA DE EVALUACIÓN
 
-**RA 6.1.** Diseña y ejecuta experimentos computacionales sobre datos estructurados, series de tiempo y señales de voz, comparando distintas estrategias de análisis, preprocesamiento, ingeniería de características o modelado, interpretando los resultados mediante métricas apropiadas y proponiendo mejoras a partir de la evidencia obtenida.
+**RA 6.1 (EXPERIMENTACIÓN).** Diseña y ejecuta experimentos computacionales sobre datos estructurados, series de tiempo y señales de voz, comparando distintas estrategias de análisis, preprocesamiento, ingeniería de características o modelado, interpretando los resultados mediante métricas apropiadas y proponiendo mejoras a partir de la evidencia obtenida.
 
 ### Criterio
 
@@ -263,7 +263,7 @@ Justifica la respuesta a partir de la matriz de confusión, las métricas obteni
 | **Alto** | **5.0** | **Diseña y ejecuta de manera completa y correcta** los experimentos con Baseline, Rolling y Lags, e **interpreta de manera completa y correcta** los resultados mediante la matriz de confusión, Precision, Recall y F1-score por clase. |
 
 
-**RA 7.1.** Investiga, selecciona e incorpora de manera autónoma una técnica, herramienta o estrategia relacionada con Ciencia de Datos que no haya sido desarrollada explícitamente en clase, justificando su integración dentro de la solución de un problema basado en datos estructurados, series de tiempo o señales de voz mediante Python.
+**RA 7.1 (AUTOAPRENDIZAJE).** Investiga, selecciona e incorpora de manera autónoma una técnica, herramienta o estrategia relacionada con Ciencia de Datos que no haya sido desarrollada explícitamente en clase, justificando su integración dentro de la solución de un problema basado en datos estructurados, series de tiempo o señales de voz mediante Python.
 
 ### Criterio
 
