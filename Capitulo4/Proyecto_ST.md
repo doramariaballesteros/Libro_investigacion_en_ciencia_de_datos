@@ -115,28 +115,36 @@ Por esta razón, cada grupo deberá formular un **problema de clasificación bin
 
 ### 💡 Ejemplo
 
-Supón que la serie seleccionada en **FRED** corresponde al precio de un activo financiero.
+Supón que la serie seleccionada en FRED corresponde a la tasa de cambio del dólar estadounidense frente al peso colombiano (USD/COP).
 
 Una posible pregunta de predicción sería:
 
-> **¿Es posible predecir, utilizando la información disponible hasta el instante \(t\), si el precio aumentará en el siguiente periodo?**
+> **¿Es posible predecir, utilizando la información disponible hasta el instante \(t\), si el precio aumentará más de un 1 % en el siguiente periodo?**
 
 La variable objetivo podría construirse como:
 
 $$
 y_t =
 \begin{cases}
-1, & \text{si } P_{t+1} > P_t \\
-0, & \text{si } P_{t+1} \leq P_t
+1, & \text{si } P_{t+1} > 1.01P_t \\
+0, & \text{si } P_{t+1} \leq 1.01P_t
 \end{cases}
 $$
 
 donde:
 
-* \(y_t=1\): el precio **sube** en el siguiente periodo.
-* \(y_t=0\): el precio **no sube** en el siguiente periodo.
+* \(y_t=1\): el precio aumenta **más de un 1 %** en el siguiente periodo.
+* \(y_t=0\): el precio **no aumenta más de un 1 %** en el siguiente periodo.
 
-De esta manera, el modelo utiliza la información disponible hasta el instante \(t\) para predecir el comportamiento del precio en \(t+1\).
+Por ejemplo, si el precio actual es \(P_t=3000\):
+
+$$
+1.01P_t=1.01(3000)=3030
+$$
+
+Por lo tanto, la clase será \(y_t=1\) si en el siguiente periodo el precio **supera 3030**.
+
+> 💡 **Importante:** el umbral del **1 % es únicamente ilustrativo**. Cada grupo deberá definir y justificar el criterio utilizado para construir su variable objetivo, teniendo en cuenta las características y el comportamiento de la serie seleccionada.
 
 
 
