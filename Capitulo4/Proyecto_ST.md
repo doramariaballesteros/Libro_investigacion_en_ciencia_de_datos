@@ -115,7 +115,7 @@ Por esta razón, cada grupo deberá formular un **problema de clasificación bin
 
 ### 💡 Ejemplo
 
-Supón que la serie seleccionada en FRED corresponde a la tasa de cambio del dólar estadounidense frente al peso colombiano (USD/COP).
+Supón que la serie seleccionada en FRED corresponde a la tasa de cambio USD/COP, expresada en pesos colombianos por dólar.
 
 Una posible pregunta de predicción sería:
 
