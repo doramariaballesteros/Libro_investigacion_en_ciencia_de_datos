@@ -271,8 +271,7 @@ Justifica la respuesta a partir de la matriz de confusión, las métricas obteni
 
 ### Acción observable
 
-**Investiga, incorpora y evalúa** un *feature* de tipo **Expanding en el Experimento 4**, justificando su construcción y su aporte a partir de los resultados obtenidos.
-
+**Investiga, incorpora y evalúa** un *feature* de tipo **Expanding en el Experimento 4**.
 ### Rúbrica de evaluación
 
 | Nivel | Valor | Descriptor |
