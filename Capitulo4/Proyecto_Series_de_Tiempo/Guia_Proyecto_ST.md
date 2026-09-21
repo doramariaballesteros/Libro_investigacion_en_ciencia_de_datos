@@ -3,7 +3,10 @@
 ## Predicción mediante Series de Tiempo
 
 📊 **Ciencia de Datos**
-
+> Dora María Ballesteros  
+> Primera edición, 2026  
+> ISBN: 978-1-957395-63-0
+> 🔗 **[Consultar el libro en Editorial REDIPE](https://editorial.redipe.org/index.php/1/catalog/book/245)**
 ---
 
 ## 📖 Contexto
