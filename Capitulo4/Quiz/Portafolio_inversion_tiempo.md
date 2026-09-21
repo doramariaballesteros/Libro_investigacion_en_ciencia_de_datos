@@ -1,5 +1,9 @@
 # 💰 Reto de Ciencia de Datos – ¿Qué pasó con el portafolio?
 
+💡 Motivación
+
+En este capítulo trabajaremos con series de tiempo del sector financiero, aplicando técnicas de Análisis Exploratorio de Datos (EDA), Ingeniería de Características (FE) y modelamiento. Antes de abordar un dataset temporal completo, realizaremos un ejercicio introductorio a partir de datos reales de un portafolio de inversiones en dos fechas diferentes del año. El objetivo será analizar cómo cambió su valor y composición, y utilizar los datos para construir una interpretación sobre lo ocurrido entre ambos momentos.
+
 ## 📌 Contexto
 
 Se dispone de información sobre el valor de un portafolio de inversiones expresado en pesos colombianos (COP) para dos fechas:
