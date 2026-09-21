@@ -241,6 +241,27 @@ Finalmente, compara los seis experimentos y responde:
 
 Justifica la respuesta a partir de la matriz de confusión, las métricas obtenidas para cada clase, la importancia de características y el número de *features* utilizados. No sustentes la decisión únicamente en el valor de *Accuracy*.
 
+## 🧪 RA 6.1 – Experimentación
+
+**RA 6.1.** Diseña y ejecuta experimentos computacionales sobre datos estructurados, series de tiempo y señales de voz, comparando distintas estrategias de análisis, preprocesamiento, ingeniería de características o modelado, interpretando los resultados mediante métricas apropiadas y proponiendo mejoras a partir de la evidencia obtenida.
+
+### Criterio
+
+**Diseña y ejecuta experimentos computacionales sobre una serie de tiempo, comparando estrategias de Ingeniería de Características e interpretando los resultados mediante métricas de clasificación.**
+
+### Acciones observables
+
+1. **Diseña y ejecuta** experimentos utilizando **Baseline, Rolling y Lags** para comparar diferentes estrategias de Ingeniería de Características.
+2. **Interpreta** los resultados obtenidos en los experimentos utilizando **matriz de confusión, Precision, Recall y F1-score por clase**.
+
+### Rúbrica de evaluación
+
+| Nivel | Valor / Rango | Descriptor |
+|---|---:|---|
+| **Bajo** | **0.0** | **No diseña ni ejecuta** los experimentos con Baseline, Rolling y Lags, y **no interpreta** los resultados mediante la matriz de confusión, Precision, Recall y F1-score por clase. |
+| **Medio** | **2.5 – 4.5** | **Diseña y ejecuta parcialmente** los experimentos con Baseline, Rolling y Lags, e **interpreta de manera incompleta** los resultados mediante la matriz de confusión, Precision, Recall y F1-score por clase. |
+| **Alto** | **5.0** | **Diseña y ejecuta de manera completa y correcta** los experimentos con Baseline, Rolling y Lags, e **interpreta de manera completa y correcta** los resultados mediante la matriz de confusión, Precision, Recall y F1-score por clase. |
+
 
 
 
