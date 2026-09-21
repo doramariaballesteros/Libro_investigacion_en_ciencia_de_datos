@@ -263,5 +263,27 @@ Justifica la respuesta a partir de la matriz de confusión, las métricas obteni
 | **Alto** | **5.0** | **Diseña y ejecuta de manera completa y correcta** los experimentos con Baseline, Rolling y Lags, e **interpreta de manera completa y correcta** los resultados mediante la matriz de confusión, Precision, Recall y F1-score por clase. |
 
 
+## 🔎 RA 7.1 – Autoaprendizaje
+
+**RA 7.1.** Investiga, selecciona e incorpora de manera autónoma una técnica, herramienta o estrategia relacionada con Ciencia de Datos que no haya sido desarrollada explícitamente en clase, justificando su integración dentro de la solución de un problema basado en datos estructurados, series de tiempo o señales de voz mediante Python.
+
+### Criterio
+
+**Investiga, incorpora y evalúa de manera autónoma la técnica Expanding en el Experimento 4 como estrategia de Ingeniería de Características para Series de Tiempo mediante Python.**
+
+### Acción observable
+
+**Investiga, incorpora y evalúa** un *feature* de tipo **Expanding en el Experimento 4**, justificando su construcción y su aporte a partir de los resultados obtenidos.
+
+### Rúbrica de evaluación
+
+| Nivel | Valor | Descriptor |
+|---|---:|---|
+| **Bajo** | **0.0** | **No investiga ni incorpora** un *feature* de tipo **Expanding** en el Experimento 4. |
+| **Medio** | **3.0** | **Investiga e incorpora** un *feature* de tipo **Expanding** en el Experimento 4, pero **evalúa parcialmente su impacto** a partir de los resultados obtenidos en los Experimentos 4, 5 y 6. |
+| **Alto** | **5.0** | **Investiga e incorpora correctamente** un *feature* de tipo **Expanding** en el Experimento 4 y **evalúa de manera completa y correcta su impacto** a partir de los resultados obtenidos en los Experimentos 4, 5 y 6. |
+
+> 📝 **Nota para el consolidado:** La calificación final del proyecto se obtiene mediante la ponderación de los dos criterios de evaluación. El **Criterio 1 – Experimentación (RA 6.1)** corresponde al **80 %** de la calificación y el **Criterio 2 – Autoaprendizaje (RA 7.1)** corresponde al **20 %** restante.
+
 
 
