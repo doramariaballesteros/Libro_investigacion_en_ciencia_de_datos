@@ -28,7 +28,7 @@ Posteriormente, deberán ampliar la metodología mediante la incorporación de u
 
 ---
 
-## 🔎 Selección del dataset
+## 🔎 1. Selección del dataset
 
 Cada grupo deberá seleccionar una serie de tiempo disponible en:
 
@@ -54,7 +54,7 @@ El periodo de análisis deberá proporcionar una cantidad suficiente de observac
 
 Las actividades a realizar se presentan a continuación:
 
-## 📈 Análisis temporal de la serie
+## 📈 2. Análisis temporal de la serie
 
 Como primera etapa, realiza una **exploración visual del comportamiento de la serie de tiempo**.
 
@@ -73,7 +73,7 @@ Cuando identifiques comportamientos diferentes, delimita los **rangos de tiempo*
 
 > 💡 **Importante:** no se busca únicamente visualizar la serie. El objetivo es interpretar su comportamiento temporal y determinar si una única tendencia describe adecuadamente todo el periodo analizado o si existen diferentes etapas en su evolución.
 
-## 🔄 Dependencia temporal
+## 🔄 3. Dependencia temporal
 
 Como siguiente etapa, analiza la **dependencia de los valores actuales de la serie respecto a sus valores pasados**.
 
@@ -90,7 +90,7 @@ A partir de la gráfica de ACF:
 > 💡 **Importante:** no se busca únicamente generar la gráfica de ACF. Analiza qué información proporciona sobre la dependencia temporal de la serie y cómo podría utilizarse posteriormente en la Ingeniería de Características.
 
 
-## 🛠️ Ingeniería de Características
+## 🛠️ 4. Ingeniería de Características
 
 A partir del análisis temporal y de dependencia realizado en las etapas anteriores, construye **nuevos *features* que representen información del comportamiento pasado de la serie**.
 
@@ -107,20 +107,21 @@ En la construcción de los nuevos *features*, asegúrate de utilizar únicamente
 
 > 💡 **Importante:** los tamaños de las ventanas y los valores de los *lags* no deben seleccionarse arbitrariamente. Explica qué información temporal busca representar cada uno y por qué puede resultar relevante para el problema de predicción.
 
+## 🎯 5. Construcción de la salida
 
+La serie seleccionada en **[FRED – Federal Reserve Economic Data](https://fred.stlouisfed.org/)** contiene una única variable numérica \(X_t\), registrada en diferentes instantes de tiempo, y **no contiene una variable de salida (*target*)**.
 
+Por esta razón, cada grupo deberá formular un **problema de clasificación binaria** y construir una variable objetivo numérica, codificada como **0 y 1**, a partir de la información disponible en la serie.
 
-### 💡 Construcción de la salida
+### 💡 Ejemplo
 
-Suponga que se selecciona un dataset financiero que contiene el precio de cierre de un activo en diferentes instantes de tiempo.
-
-El dataset contiene el precio $P_t$, pero **no contiene una variable que indique si el precio aumentará en el siguiente periodo**.
+Supón que la serie seleccionada en **FRED** corresponde al precio de un activo financiero.
 
 Una posible pregunta de predicción sería:
 
 > **¿Es posible predecir, utilizando la información disponible hasta el instante \(t\), si el precio aumentará en el siguiente periodo?**
 
-Para responder esta pregunta podría construirse una variable objetivo:
+La variable objetivo podría construirse como:
 
 $$
 y_t =
@@ -132,11 +133,10 @@ $$
 
 donde:
 
-- $y_t = 1$: el precio **sube** en el siguiente periodo.
-- $y_t = 0$: el precio **no sube** en el siguiente periodo.
+* \(y_t=1\): el precio **sube** en el siguiente periodo.
+* \(y_t=0\): el precio **no sube** en el siguiente periodo.
 
-De esta manera, el modelo utilizaría la información disponible hasta el instante \(t\) para predecir el comportamiento del precio en \(t+1\).
+De esta manera, el modelo utiliza la información disponible hasta el instante \(t\) para predecir el comportamiento del precio en \(t+1\).
 
-> 💡 **Importante**
->
-> Este ejemplo es únicamente ilustrativo. Cada grupo deberá formular su propio problema de predicción y definir o construir una variable objetivo coherente con las características del dataset seleccionado.
+
+
