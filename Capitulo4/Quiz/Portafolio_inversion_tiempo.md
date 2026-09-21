@@ -88,18 +88,31 @@ A partir de los resultados obtenidos, responde:
 Finalmente, redacta una **conclusión general basada en los datos** que sintetice qué ocurrió con el portafolio durante el periodo analizado..
 
 ---
-# 💬 Entregable – Discusión en clase
+# 💬 Cierre – Mesa redonda
 
-Al finalizar la actividad, cada grupo participará en una **discusión de resultados en clase**.
+Al finalizar el análisis, realizaremos una **mesa redonda para compartir y contrastar los resultados obtenidos por los diferentes grupos**.
 
-Utilizando los cálculos y la visualización obtenida, el grupo deberá presentar brevemente:
+Cada grupo presentará brevemente:
 
 - El cambio observado en el valor total del portafolio.
 - El comportamiento de la inversión nacional e internacional.
-- La principal conclusión que puede obtenerse a partir de los datos.
+- La principal conclusión obtenida a partir de los datos.
 
-La discusión deberá estar **sustentada en los resultados obtenidos durante el análisis**.
+Durante la discusión se compararán los resultados entre los grupos, se analizarán posibles diferencias en los cálculos o interpretaciones y se construirá una **conclusión conjunta sustentada en los datos**.
 
+> **El resultado de la actividad será la participación en la mesa redonda; no se requiere la entrega del Notebook.**
 
+# 📋 Rúbrica de Evaluación
 
+## 🎯 Resultado de Aprendizaje – RA 1.1
+
+**Analiza y explica los fundamentos de la ingeniería de datos y de la ingeniería de características dentro del proceso de Ciencia de Datos, incluyendo los niveles de medición de los datos, las técnicas de análisis exploratorio, preprocesamiento y transformación aplicadas a datos estructurados, series de tiempo y/o señales de voz, a partir del estudio del material de clase y de la literatura científica.**
+
+### Criterio de evaluación
+
+**Analiza y explica el comportamiento de un portafolio de inversión mediante un breve análisis exploratorio y la transformación de los datos, comparando dos periodos de inversión.**
+
+| Bajo (0) | Medio (250–349) | Alto (350–500) |
+|---|---|---|
+| No analiza ni explica el comportamiento del portafolio de inversión. | Analiza parcialmente el comportamiento del portafolio mediante el análisis exploratorio y la transformación de los datos, pero presenta una explicación limitada de los cambios observados entre los dos periodos. | Analiza y explica el comportamiento del portafolio mediante el análisis exploratorio y la transformación de los datos, comparando los cambios observados entre los dos periodos y sustentando sus conclusiones en los resultados obtenidos durante la mesa redonda. |
 
