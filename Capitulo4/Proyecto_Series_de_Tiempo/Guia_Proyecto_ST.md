@@ -291,43 +291,25 @@ Justifica la respuesta a partir de la **matriz de confusión, las métricas obte
 
 Cada grupo deberá entregar un **Notebook desarrollado en Python** que documente de manera organizada y reproducible el desarrollo completo del proyecto.
 
-El Notebook deberá incluir:
-
-- **Descripción de la serie seleccionada:** nombre, fuente, unidad de medida, frecuencia de muestreo, periodo de análisis y número de observaciones.
-- **Análisis temporal de la serie:** gráfica de la serie original, análisis de tendencias y rangos temporales, y curva de tendencia obtenida mediante *Rolling*.
-- **Análisis de dependencia temporal:** gráfica de la Función de Autocorrelación (**ACF**) e interpretación de los *lags* identificados.
-- **Ingeniería de Características:** construcción y justificación de los 4 *features* de tipo *Rolling* y los 4 *features* de tipo *Lag*.
-- **Construcción de la variable de salida:** definición de las clases 0 y 1, justificación del criterio utilizado y análisis de la distribución de las clases.
-- **Modelamiento y experimentación:** desarrollo completo de los **seis experimentos** definidos en el proyecto.
-- **Evaluación de los experimentos:** matriz de confusión, Accuracy, Precision, Recall y F1-score por clase para cada experimento, así como la importancia de características cuando corresponda.
-- **Comparación de resultados:** análisis comparativo de los seis experimentos y selección de la solución final a partir de la evidencia obtenida.
-- **Conclusiones:** principales hallazgos derivados del análisis temporal, la Ingeniería de Características y la experimentación.
-
-El Notebook deberá integrar **código, resultados, gráficas e interpretación**. No se considerará suficiente presentar únicamente la ejecución del código o las salidas generadas.
-
 > 💡 **Importante:** el Notebook constituye la **evidencia completa del desarrollo del proyecto**. Todos los resultados utilizados durante la sustentación deberán estar respaldados por los análisis y experimentos incluidos en este entregable.
 
 ---
 
 # 🖼️ 8. Material para la sustentación – Póster
 
-Para la sustentación, cada grupo deberá elaborar un **póster académico** que sintetice visualmente el problema desarrollado, las decisiones metodológicas y los principales resultados obtenidos.
+Cada grupo deberá elaborar un **póster académico** que sintetice visualmente el proyecto.
 
-El póster deberá incluir como mínimo:
+Debe incluir:
 
-- **Serie seleccionada y problema de predicción:** identificación de la serie, fuente, periodo, frecuencia de muestreo y pregunta de predicción.
-- **Comportamiento temporal:** gráfica de la serie y curva de tendencia obtenida mediante *Rolling*, destacando los principales comportamientos identificados.
-- **Dependencia temporal:** gráfica de la **ACF** y una breve interpretación de los *lags* relevantes.
-- **Ingeniería de Características:** ventanas utilizadas para los *features* de tipo *Rolling*, retardos seleccionados para los *features* de tipo *Lag* y *feature* de tipo *Expanding* incorporado.
-- **Variable de salida:** definición de las clases 0 y 1 y criterio utilizado para su construcción.
-- **Resultados de los seis experimentos:** tabla comparativa que presente **Accuracy, Precision, Recall y F1-score por clase**.
-- **Matriz de confusión de la solución seleccionada**.
-- **Importancia de características:** representación que permita sustentar el aporte de los *features* y las decisiones realizadas durante la experimentación.
-- **Conclusiones:** identificación de la solución seleccionada y justificación de la decisión a partir de los resultados obtenidos.
+- **Serie y problema de predicción.**
+- **Análisis temporal:** tendencia, ACF y partición Train/Test.
+- **Ingeniería de Características:** *Rolling*, *Lags* y *Expanding*.
+- **Resultados:** comparación de los seis experimentos.
+- **Solución seleccionada:** matriz de confusión e importancia de características.
+- **Conclusiones.**
 
-El póster deberá presentar la información de manera **sintética, legible y visual**, priorizando gráficas, tablas y resultados relevantes sobre grandes bloques de texto.
+El póster deberá ser **sintético, legible y visual**, priorizando gráficas y tablas sobre texto.
 
-> 💡 **Importante:** el póster es un **material de apoyo para la sustentación** y no reemplaza el Notebook. Su propósito es comunicar de manera clara la historia del proyecto: **qué problema se formuló, qué decisiones se tomaron, qué se experimentó, qué resultados se obtuvieron y qué solución se seleccionó**.
 ---
 
 # 🧪 RÚBRICA DE EVALUACIÓN
