@@ -2,11 +2,10 @@
 
 ## Predicción mediante Series de Tiempo
 
-📊 **Ciencia de Datos**
-> Dora María Ballesteros  
-> Libro Investigación en ciencia de datos
+> **Dora María Ballesteros**  
+> *Investigación en Ciencia de Datos*  
 > Primera edición, 2026  
-> ISBN: 978-1-957395-63-0
+> ISBN: 978-1-957395-63-0  
 > 🔗 **[Consultar el libro en Editorial REDIPE](https://editorial.redipe.org/index.php/1/catalog/book/245)**
 ---
 
