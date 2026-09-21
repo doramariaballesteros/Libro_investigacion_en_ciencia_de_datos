@@ -60,10 +60,10 @@ Calcula el **valor total del portafolio** para cada fecha y determina:
 - Valor de la inversión nacional e internacional en cada fecha.
 - Variación porcentual de la inversión nacional e internacional.
 
-Calcula además la participación de cada componente:
+Calcula además la participación de cada componente (nacional/internacional):
 
 $$
-\text{Participación}(\%) =
+P =
 \frac{\text{Valor del componente}}
 {\text{Valor total del portafolio}}
 \times 100
