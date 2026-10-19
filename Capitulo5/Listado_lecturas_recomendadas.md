@@ -14,7 +14,7 @@ Las siguientes publicaciones permiten explorar la evolución de una línea de in
 
 **Temática:** Procesamiento digital de señales de voz y ocultamiento de información (data hiding).
 
-🔗 [Consultar artículo en ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0957417412007257)
+🔗 [Paper On the ability of adaptation of speech signals and data hiding](https://www.sciencedirect.com/science/article/pii/S0957417412007257)
 
 ### 📄 2. Highly transparent steganography model of speech signals using Efficient Wavelet Masking (2012)
 
@@ -24,7 +24,7 @@ Las siguientes publicaciones permiten explorar la evolución de una línea de in
 
 **Temática:** Esteganografía de señales de voz mediante técnicas de enmascaramiento basadas en transformadas wavelet.
 
-🔗 [Consultar artículo en ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0957417412003107)
+🔗 [Paper Highly transparent steganography model](https://www.sciencedirect.com/science/article/pii/S0957417412003107)
 
 ### 📄 3. Deep4SNet: deep learning for fake speech classification (2021)
 
@@ -34,7 +34,7 @@ Las siguientes publicaciones permiten explorar la evolución de una línea de in
 
 **Temática:** Clasificación de voz sintética mediante aprendizaje profundo, utilizando histogramas de señales de audio como entrada de una red neuronal convolucional (CNN).
 
-🔗 [Consultar artículo en ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0957417421008770)
+🔗 [Paper Deep4SNet](https://www.sciencedirect.com/science/article/pii/S0957417421008770)
 
 ### 📄 4. FakeVoiceFinder: An Open-Source Framework for Synthetic and Deepfake Audio Detection (2026)
 
@@ -44,9 +44,9 @@ Las siguientes publicaciones permiten explorar la evolución de una línea de in
 
 **Temática:** Framework de código abierto para ejecutar experimentos masivos de clasificación de audio sintético y deepfakes de voz, utilizando diferentes arquitecturas de aprendizaje profundo y representaciones espectrales.
 
-🔗 [Consultar artículo](https://doi.org/10.3390/bdcc10010025)
+🔗 [Paper FakeVoiceFinder](https://doi.org/10.3390/bdcc10010025)
 
-💻 [Repositorio de FakeVoiceFinder en GitHub](https://github.com/DEEP-CGPS/FakeVoiceFinder)
+💻 [Repositorio FakeVoiceFinder en GitHub](https://github.com/DEEP-CGPS/FakeVoiceFinder)
 
 ### 📄 5. Spectral Multi-Representation Fusion for Audio Deepfake Detection (2026)
 
@@ -56,7 +56,7 @@ Las siguientes publicaciones permiten explorar la evolución de una línea de in
 
 **Temática:** Fusión de modelos de aprendizaje profundo mediante la estrategia One-Hard Voting, combinando información de múltiples representaciones espectrales para la detección de audio deepfake.
 
-🔗 [Consultar artículo](https://doi.org/10.3390/a19070549)
+🔗 [Paper SMRF](https://doi.org/10.3390/a19070549)
 
 ---
 
