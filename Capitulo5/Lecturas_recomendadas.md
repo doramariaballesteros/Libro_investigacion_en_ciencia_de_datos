@@ -16,6 +16,8 @@ Las siguientes publicaciones permiten explorar la evolución de una línea de in
 
 🔗 [Paper On the ability of adaptation of speech signals and data hiding](https://www.sciencedirect.com/science/article/pii/S0957417412007257)
 
+💻 [Repositorio Imitation](https://github.com/doramariaballesteros/Imitation-using-Signal-Processing)
+
 ### 📄 2. Highly transparent steganography model of speech signals using Efficient Wavelet Masking (2012)
 
 **Autores:** Dora M. Ballesteros L. y Juan M. Moreno A.
@@ -57,6 +59,8 @@ Las siguientes publicaciones permiten explorar la evolución de una línea de in
 **Temática:** Fusión de modelos de aprendizaje profundo mediante la estrategia One-Hard Voting, combinando información de múltiples representaciones espectrales para la detección de audio deepfake.
 
 🔗 [Paper SMRF](https://doi.org/10.3390/a19070549)
+
+💻 [Repositorio SMRF](https://github.com/DEEP-CGPS/FakeVoiceFinder/blob/main/notebooks/smrf_hybrid_fusion_fake_inference.ipynb)
 
 ---
 
