@@ -7,6 +7,13 @@
 
 > 🔗 **[Consultar el libro en Editorial REDIPE](https://editorial.redipe.org/index.php/1/catalog/book/245)**
 
+### 🎬 Presentación de la autora
+
+Conoce a **Dora María Ballesteros**, autora del libro *Investigación en Ciencia de Datos*, y su trayectoria académica e investigativa.
+
+[![Presentación de Dora María Ballesteros](https://img.youtube.com/vi/hHAS6AaVm5Q/hqdefault.jpg)](https://youtu.be/hHAS6AaVm5Q)
+
+▶️ **[Ver presentación en YouTube](https://youtu.be/hHAS6AaVm5Q)**
 ---
 
 ## 📖 Sobre este repositorio
