@@ -1,45 +1,39 @@
 
-# 🔐 Actividad experimental: Recuperación de mensajes secretos mediante DWT
+# Capítulo 5: Reverse — Recuperación de Señales de Audio Secretas
 
-## 🎯 Objetivo
+📖 `Libro: Investigación en Ciencia de Datos`
 
-Recuperar diferentes mensajes de voz a partir de una señal de audio común y cinco claves de permutación, utilizando el algoritmo **Reverse**, basado en la Transformada Discreta Wavelet (DWT).
-
----
-
-## 🎵 Parte 1. Recuperación de mensajes secretos
-
-### 📂 Archivos proporcionados
-
-| Archivo | Descripción |
-|---|---|
-| `Reverse_GitHub.ipynb` | Código para recuperar los mensajes secretos. |
-| `audio.wav` | Señal de audio utilizada como entrada común. |
-| `key1.csv` a `key5.csv` | Cinco claves de permutación, cada una con **383.197 índices**. |
-
-### ⚙️ Procedimiento
-
-1. Abra el notebook `Reverse_GitHub.ipynb` en Google Colab.
-2. Cargue el archivo `audio.wav` y las cinco claves (`key1.csv` a `key5.csv`) en el directorio `/content`.
-3. Ejecute el código para recuperar los cinco mensajes secretos.
-4. Reproduzca y escuche atentamente los archivos recuperados (`raudio1.wav` a `raudio5.wav`).
+**Autor: Dora María Ballesteros Larrotta**  
+Universidad Militar Nueva Granada (UMNG)
 
 ---
 
-## 🔎 Parte 2. Análisis de los mensajes recuperados
+## Material complementario del libro
 
-A partir de la inspección de las claves y la escucha de los audios, responda:
+Este notebook acompaña el **Capítulo 5** y presenta un ejemplo de recuperación de señales de audio secretas mediante el proceso **Reverse**, utilizando una señal de audio objetivo (*target*) y las claves generadas previamente mediante **Imitation**.
 
-**a)** ¿Existe alguna relación o similitud entre las cinco claves proporcionadas y los mensajes recuperados? Explique su respuesta.
-
-**b)** ¿Qué similitudes y diferencias identifica entre los cinco mensajes recuperados? Considere características como el contenido, las voces y la calidad perceptual.
-
-**c)** ¿El género de la voz de cada mensaje recuperado coincide con el género de la voz presente en `audio.wav`?
-
-**d)** ¿El idioma de los mensajes recuperados coincide con el idioma de `audio.wav`?
-
-**e)** Teniendo en cuenta que los cinco mensajes fueron recuperados utilizando un mismo archivo de audio, ¿qué papel considera que desempeñan las claves en el proceso de recuperación?
+El procedimiento permite recuperar cinco señales secretas a partir de `audio.wav` y sus correspondientes claves (`key1.csv` hasta `key5.csv`), sin utilizar las señales de audio imitadas (`imitated.wav`).
 
 ---
 
-📌 **Importante:** En esta primera etapa no debe modificar las claves ni el código del algoritmo Reverse. Los resultados obtenidos serán utilizados como referencia para los experimentos posteriores.
+## 🎧 Actividad exploratoria. Recuperación de señales secretas
+
+### 🎯 Propósito
+
+Explorar el funcionamiento del proceso **Reverse**, observando cómo una misma señal de audio, combinada con diferentes claves, permite recuperar distintos mensajes secretos.
+
+### 📂 Archivos suministrados
+
+- 🎵 **audio.wav:** señal de audio objetivo (*target*).
+- 🔑 **key1.csv, key2.csv, key3.csv, key4.csv y key5.csv:** claves generadas mediante Imitation.
+- 💻 **Código Reverse:** implementación en Python del proceso de recuperación.
+
+### 🧪 Procedimiento
+
+1. Ejecuta el código Reverse utilizando `audio.wav` y cada una de las cinco claves, de manera independiente.
+2. Recupera las cinco señales de audio secretas.
+3. Reproduce y escucha cada una de las señales recuperadas.
+4. Observa cómo una misma señal de audio permite recuperar diferentes mensajes dependiendo de la clave utilizada.
+
+**📌 Nota:** Esta actividad es exclusivamente exploratoria y no hace parte de la evaluación de la asignatura.
+
