@@ -35,8 +35,8 @@ Para cada comparación, calcule:
 
 Presente los resultados en una tabla:
 
-| Comparación | Correlación de Pearson | MSE |
-|---|---|---|
+| Comparación | Correlación de Pearson | 
+|---|---|
 | audio vs. imitated1 | | |
 | audio vs. imitated2 | | |
 | audio vs. imitated3 | | |
