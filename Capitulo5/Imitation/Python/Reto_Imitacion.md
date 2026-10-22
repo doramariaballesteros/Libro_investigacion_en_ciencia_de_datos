@@ -85,13 +85,6 @@ Presenta los resultados en una tabla:
 1. ¿Qué parejas de claves presentan la mayor y la menor similitud? Justifica tu respuesta utilizando los porcentajes de coincidencia obtenidos.
 2. ¿Qué puedes concluir acerca de las claves generadas cuando se mantiene la misma señal objetivo y se utilizan diferentes señales secretas?
 
-
-### 📝 Parte 4. Conclusiones
-
-1. ¿Es posible obtener señales imitadas con alta similitud respecto a una misma señal objetivo utilizando diferentes señales secretas? Sustenta tu respuesta a partir de los resultados experimentales.
-2. ¿Existe alguna relación entre la similitud de las señales imitadas y la similitud de sus correspondientes claves? Justifica utilizando los resultados obtenidos.
-
-
 ## 📋 Rúbrica de evaluación — Actividad 1. Imitation
 
 ### 🎯 Resultado de Aprendizaje
