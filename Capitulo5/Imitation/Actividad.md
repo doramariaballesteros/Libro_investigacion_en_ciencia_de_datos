@@ -17,45 +17,44 @@ Para el desarrollo de la actividad se proporcionan:
 
 ### 🧪 Parte 1. Ejecución de Imitation
 
-Ejecute el código de Imitation utilizando `audio.wav` como señal objetivo y, de manera independiente, cada una de las cinco señales secretas.
+Ejecuta el código de Imitation utilizando `audio.wav` como señal objetivo y, de manera independiente, cada una de las cinco señales secretas.
 
-Como resultado, debe obtener:
+Como resultado, debes obtener:
 
 - Cinco señales de audio imitadas: `imitated1.wav` hasta `imitated5.wav`.
 - Cinco claves: `key1.csv` hasta `key5.csv`.
 
 ### 📊 Parte 2. Similitud entre señales de audio
 
-Compare la señal original `audio.wav` con cada una de las cinco señales imitadas.
+Compara la señal original `audio.wav` con cada una de las cinco señales imitadas.
 
-Para cada comparación, calcule:
+Para cada comparación, calcula:
 
 1. **Coeficiente de correlación de Pearson:** para evaluar la similitud entre las formas de onda.
 2. **Error cuadrático medio (MSE):** para cuantificar las diferencias entre las muestras.
 
-Presente los resultados en una tabla:
+Presenta los resultados en una tabla:
 
 | Comparación | Correlación de Pearson | MSE |
-|---|---|---|
+|:---|:---:|:---:|
 | audio vs. imitated1 | | |
 | audio vs. imitated2 | | |
 | audio vs. imitated3 | | |
 | audio vs. imitated4 | | |
 | audio vs. imitated5 | | |
 
-
 **Preguntas de análisis:**
 
-1. ¿Cuál de las cinco señales imitadas presenta mayor similitud con la señal objetivo? Justifique su respuesta utilizando los valores de correlación de Pearson y MSE obtenidos.
-2. ¿Las cinco señales imitadas presentan niveles de similitud comparables? Analice las diferencias observadas y explique si ambas métricas permiten establecer conclusiones consistentes.
+1. ¿Cuál de las cinco señales imitadas presenta mayor similitud con la señal objetivo? Justifica tu respuesta utilizando los valores de correlación de Pearson y MSE obtenidos.
+2. ¿Las cinco señales imitadas presentan niveles de similitud comparables? Analiza las diferencias observadas y explica si ambas métricas permiten establecer conclusiones consistentes.
 
 ### 🔑 Parte 3. Similitud entre claves
 
 Las claves generadas mediante Imitation corresponden a vectores de índices asociados con los coeficientes obtenidos mediante la transformación wavelet `sym4`.
 
-Compare las cinco claves entre sí, considerando todas las parejas posibles (10 comparaciones).
+Compara las cinco claves entre sí, considerando todas las parejas posibles (10 comparaciones).
 
-Para cada pareja, calcule:
+Para cada pareja, calcula:
 
 **Porcentaje de coincidencia:** proporción de posiciones en las que ambas claves contienen exactamente el mismo índice.
 
@@ -66,10 +65,7 @@ $$
 
 Donde $N$ es la longitud de las claves y $\mathbb{1}$ es la función indicadora, que toma el valor de 1 cuando los índices coinciden y 0 en caso contrario.
 
-Presente los resultados en una tabla:
-
-
-Presente los resultados en una tabla:
+Presenta los resultados en una tabla:
 
 | Comparación | Coincidencia (%) |
 |:---|:---:|
@@ -84,18 +80,13 @@ Presente los resultados en una tabla:
 | key3 vs. key5 | |
 | key4 vs. key5 | |
 
-
 **Preguntas de análisis:**
 
-1. ¿Qué pareja de claves presenta mayor similitud y cuál presenta menor similitud?
-2. ¿Qué indican los porcentajes de coincidencia obtenidos acerca de las diferencias entre las claves?
-3. ¿Los resultados de Spearman son consistentes con los porcentajes de coincidencia? Explique.
-4. ¿Qué puede concluir acerca de las claves generadas cuando se mantiene la misma señal objetivo y se modifican las señales secretas?
+1. ¿Qué parejas de claves presentan la mayor y la menor similitud? Justifica tu respuesta utilizando los porcentajes de coincidencia obtenidos.
+2. ¿Qué puedes concluir acerca de las claves generadas cuando se mantiene la misma señal objetivo y se utilizan diferentes señales secretas?
+
 
 ### 📝 Parte 4. Conclusiones
 
-A partir de los resultados obtenidos, responda:
-
-1. ¿Es posible obtener señales imitadas con alta similitud respecto a una misma señal objetivo utilizando diferentes señales secretas?
-2. ¿Existe alguna relación entre la similitud de las señales imitadas y la similitud de sus correspondientes claves? Sustente su respuesta con los resultados experimentales.
-3. ¿Qué evidencia proporcionan los resultados acerca del comportamiento del proceso de Imitation?
+1. ¿Es posible obtener señales imitadas con alta similitud respecto a una misma señal objetivo utilizando diferentes señales secretas? Sustenta tu respuesta a partir de los resultados experimentales.
+2. ¿Existe alguna relación entre la similitud de las señales imitadas y la similitud de sus correspondientes claves? Justifica utilizando los resultados obtenidos.
