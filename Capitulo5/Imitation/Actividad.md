@@ -1,5 +1,5 @@
 
-## 🎯 Actividad 1. Análisis de similitud en el proceso de Imitation
+# 🔐 Reto: Análisis de Similitud en el Proceso de Imitación
 
 ### 📌 Propósito
 
