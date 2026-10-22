@@ -38,18 +38,13 @@ Presente los resultados en una tabla:
 
 Presente los resultados en una tabla:
 
-| Comparación | Coincidencia (%) |
-|:---|:---:|
-| key1 vs. key2 | |
-| key1 vs. key3 | |
-| key1 vs. key4 | |
-| key1 vs. key5 | |
-| key2 vs. key3 | |
-| key2 vs. key4 | |
-| key2 vs. key5 | |
-| key3 vs. key4 | |
-| key3 vs. key5 | |
-| key4 vs. key5 | |
+| Comparación | Correlación de Pearson | MSE |
+|---|---|---|
+| audio vs. imitated1 | | |
+| audio vs. imitated2 | | |
+| audio vs. imitated3 | | |
+| audio vs. imitated4 | | |
+| audio vs. imitated5 | | |
 
 
 **Preguntas de análisis:**
@@ -76,18 +71,22 @@ Donde $N$ es la longitud de las claves y $\mathbb{1}$ es la función indicadora,
 
 Presente los resultados en una tabla:
 
-| Comparación | Coincidencia (%) | 
-|---|---|---|
-| key1 vs. key2 | | 
-| key1 vs. key3 | | 
-| key1 vs. key4 | | 
-| key1 vs. key5 | | 
-| key2 vs. key3 | | 
-| key2 vs. key4 | | 
-| key2 vs. key5 | | 
-| key3 vs. key4 | | 
-| key3 vs. key5 | | 
-| key4 vs. key5 | | 
+
+Presente los resultados en una tabla:
+
+| Comparación | Coincidencia (%) |
+|:---|:---:|
+| key1 vs. key2 | |
+| key1 vs. key3 | |
+| key1 vs. key4 | |
+| key1 vs. key5 | |
+| key2 vs. key3 | |
+| key2 vs. key4 | |
+| key2 vs. key5 | |
+| key3 vs. key4 | |
+| key3 vs. key5 | |
+| key4 vs. key5 | |
+
 
 **Preguntas de análisis:**
 
