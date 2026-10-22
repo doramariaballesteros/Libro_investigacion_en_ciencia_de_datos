@@ -45,7 +45,7 @@ Presenta los resultados en una tabla:
 
 **Preguntas de análisis:**
 
-1. ¿Cuál de las cinco señales imitadas presenta mayor similitud con la señal objetivo? Justifica tu respuesta utilizando los valores de correlación de Pearson y MSE obtenidos.
+1. ¿Cuál de las cinco señales imitadas presenta mayor similitud con la señal audio.wav? Justifica tu respuesta utilizando los valores de correlación de Pearson y MSE obtenidos.
 2. ¿Las cinco señales imitadas presentan niveles de similitud comparables? Analiza las diferencias observadas y explica si ambas métricas permiten establecer conclusiones consistentes.
 
 ### 🔑 Parte 3. Similitud entre claves
