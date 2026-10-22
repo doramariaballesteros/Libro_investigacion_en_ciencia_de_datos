@@ -90,3 +90,61 @@ Presenta los resultados en una tabla:
 
 1. ¿Es posible obtener señales imitadas con alta similitud respecto a una misma señal objetivo utilizando diferentes señales secretas? Sustenta tu respuesta a partir de los resultados experimentales.
 2. ¿Existe alguna relación entre la similitud de las señales imitadas y la similitud de sus correspondientes claves? Justifica utilizando los resultados obtenidos.
+
+
+## 📋 Rúbrica de evaluación — Actividad 1. Imitation
+
+### 🎯 Resultado de Aprendizaje
+
+Implementa soluciones de ingeniería de datos para datos estructurados, series de tiempo y señales de voz, integrando procesos de exploración, transformación, ingeniería de características y análisis sobre un conjunto de datos, utilizando Python y tomando como referencia los casos de estudio desarrollados en la asignatura.
+
+### 📊 Niveles de desempeño
+
+| Nivel | Desempeño | Nota |
+|:---:|---|:---:|
+| 1 | Sin evidencia | **0.0** |
+| 2 | Inicial | **2.0** |
+| 3 | Satisfactorio | **3.5** |
+| 4 | Sobresaliente | **5.0** |
+
+### 🔵 Criterio 1. Similitud entre señales imitadas (50 %)
+
+**Implementa en Python métricas de similitud entre señales imitadas y compara sus resultados.**
+
+| Nivel | Descriptor | Nota |
+|:---:|---|:---:|
+| 1 | No implementa las métricas de similitud ni compara los resultados. | 0.0 |
+| 2 | Implementa parcialmente las métricas de similitud y compara parcialmente los resultados. | 2.0 |
+| 3 | Implementa completamente y de forma correcta las métricas de similitud, pero compara parcialmente los resultados. | 3.5 |
+| 4 | Implementa completamente y de forma correcta las métricas de similitud y compara completamente y de forma correcta los resultados. | 5.0 |
+
+### 🟣 Criterio 2. Similitud entre claves (50 %)
+
+**Implementa en Python una métrica de similitud entre claves generadas mediante Imitation y compara sus resultados.**
+
+| Nivel | Descriptor | Nota |
+|:---:|---|:---:|
+| 1 | No implementa la métrica de similitud ni compara los resultados. | 0.0 |
+| 2 | Implementa parcialmente la métrica de similitud y compara parcialmente los resultados. | 2.0 |
+| 3 | Implementa completamente y de forma correcta la métrica de similitud, pero compara parcialmente los resultados. | 3.5 |
+| 4 | Implementa completamente y de forma correcta la métrica de similitud y compara completamente y de forma correcta los resultados. | 5.0 |
+
+### 🧮 Cálculo de la nota final
+
+Los dos criterios tienen la misma ponderación:
+
+- **Criterio 1:** 50 %
+- **Criterio 2:** 50 %
+
+La nota final de la actividad se calcula mediante:
+
+$$
+\boxed{N_f=0.5N_{C1}+0.5N_{C2}}
+$$
+
+Donde:
+
+- $N_{C1}$: nota obtenida en el criterio 1.
+- $N_{C2}$: nota obtenida en el criterio 2.
+- $N_f$: nota final de la actividad.
+
