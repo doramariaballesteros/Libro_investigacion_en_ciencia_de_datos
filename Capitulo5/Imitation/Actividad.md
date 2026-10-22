@@ -45,9 +45,8 @@ Presente los resultados en una tabla:
 
 **Preguntas de análisis:**
 
-1. ¿Cuál de las cinco señales imitadas presenta mayor similitud con la señal objetivo? Justifique utilizando ambas métricas.
-2. ¿Las cinco señales imitadas presentan niveles de similitud comparables o existen diferencias significativas entre ellas?
-3. ¿Los resultados de correlación y MSE permiten establecer conclusiones consistentes sobre la similitud de las señales? Explique.
+1. ¿Cuál de las cinco señales imitadas presenta mayor similitud con la señal objetivo? Justifique su respuesta utilizando los valores de correlación de Pearson y MSE obtenidos.
+2. ¿Las cinco señales imitadas presentan niveles de similitud comparables? Analice las diferencias observadas y explique si ambas métricas permiten establecer conclusiones consistentes.
 
 ### 🔑 Parte 3. Similitud entre claves
 
@@ -57,23 +56,29 @@ Compare las cinco claves entre sí, considerando todas las parejas posibles (10 
 
 Para cada pareja, calcule:
 
-1. **Porcentaje de coincidencia:** proporción de posiciones en las que ambas claves contienen exactamente el mismo índice.
-2. **Coeficiente de correlación de Spearman:** para evaluar la relación entre los ordenamientos de los índices.
+**Porcentaje de coincidencia:** proporción de posiciones en las que ambas claves contienen exactamente el mismo índice.
+
+$$
+\text{Coincidencia (\%)} =
+\frac{\sum_{i=1}^{N}\mathbb{1}(K_1[i]=K_2[i])}{N}\times 100
+$$
+
+Donde $N$ es la longitud de las claves y $\mathbb{1}$ es la función indicadora, que toma el valor de 1 cuando los índices coinciden y 0 en caso contrario.
 
 Presente los resultados en una tabla:
 
-| Comparación | Coincidencia (%) | Correlación de Spearman |
+| Comparación | Coincidencia (%) | 
 |---|---|---|
-| key1 vs. key2 | | |
-| key1 vs. key3 | | |
-| key1 vs. key4 | | |
-| key1 vs. key5 | | |
-| key2 vs. key3 | | |
-| key2 vs. key4 | | |
-| key2 vs. key5 | | |
-| key3 vs. key4 | | |
-| key3 vs. key5 | | |
-| key4 vs. key5 | | |
+| key1 vs. key2 | | 
+| key1 vs. key3 | | 
+| key1 vs. key4 | | 
+| key1 vs. key5 | | 
+| key2 vs. key3 | | 
+| key2 vs. key4 | | 
+| key2 vs. key5 | | 
+| key3 vs. key4 | | 
+| key3 vs. key5 | | 
+| key4 vs. key5 | | 
 
 **Preguntas de análisis:**
 
