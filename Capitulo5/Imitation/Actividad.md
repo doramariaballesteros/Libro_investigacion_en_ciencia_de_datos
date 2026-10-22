@@ -35,13 +35,13 @@ Para cada comparación, calcule:
 
 Presente los resultados en una tabla:
 
-| Comparación | Correlación de Pearson | 
+| Comparación | Correlación de Pearson |
 |---|---|
-| audio vs. imitated1 | | |
-| audio vs. imitated2 | | |
-| audio vs. imitated3 | | |
-| audio vs. imitated4 | | |
-| audio vs. imitated5 | | |
+| audio vs. imitated1 | |
+| audio vs. imitated2 | |
+| audio vs. imitated3 | |
+| audio vs. imitated4 | |
+| audio vs. imitated5 | |
 
 **Preguntas de análisis:**
 
