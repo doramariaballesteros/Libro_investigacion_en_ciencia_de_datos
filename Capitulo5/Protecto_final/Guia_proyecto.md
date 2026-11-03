@@ -206,11 +206,11 @@ Investiga, selecciona e incorpora de manera autónoma una técnica, herramienta 
 
 La evaluación contempla **dos criterios complementarios**: el desempeño experimental del método de fusión y la calidad de la investigación y justificación de la técnica seleccionada.
 
-### 📈 Criterio 1. Desempeño del método de fusión (RA 6.1)
+### 🔬 Criterio 1. Experimentación y evaluación del método de fusión (RA 6.1)
 
 **⚖️ Peso: 65 %**
 
-Se evalúa el **F1 obtenido por el método de fusión** sobre el conjunto de validación interna, tomando como referencia el mejor resultado alcanzado entre los grupos de la clase.
+Se evalúa la capacidad de diseñar y ejecutar un experimento computacional, implementando un método de fusión basado en Machine Learning y evaluando su desempeño mediante el F1 obtenido sobre el conjunto de validación interna, en comparación con los resultados de los demás grupos de la clase.
 
 | Nota | Descripción |
 |:---:|---|
