@@ -67,7 +67,7 @@ La columna `ground_truth` contiene las etiquetas verdaderas:
 
 El primer paso consiste en reorganizar el dataset original para obtener **una única fila por audio**, con la siguiente estructura:
 
-- 📥 **Cuatro características de entrada (features): una por cada representación espectral (LOG, MEL, DWT y CQT) perteneciente a un mismo audio. Cada característica corresponde a la predicción generada por el respectivo modelo DenseNet121 y debe conservar su valor original en el rango de 0 a 100.0**.
+- 📥 **Cuatro características de entrada (features):** una por cada representación espectral (LOG, MEL, DWT y CQT) perteneciente a un mismo audio. Cada característica corresponde a la predicción generada por el respectivo modelo DenseNet121 y debe conservar su valor original en el rango de 0 a 100.0.
 - 📤 **Una variable de salida (*target*):** corresponde al valor de `ground_truth` del audio y debe ser **binaria (0 o 1)**.
 
 Cada audio estará representado mediante un vector de cuatro características:
