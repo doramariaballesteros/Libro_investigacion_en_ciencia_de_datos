@@ -65,7 +65,14 @@ La columna `ground_truth` contiene las etiquetas verdaderas:
 
 🔍 **¿Cómo convertir cuatro predicciones en una única entrada para Machine Learning?**
 
-El primer paso consiste en reorganizar el dataset original para obtener **una única fila por audio**, conservando las predicciones correspondientes a las cuatro representaciones: LOG, MEL, DWT y CQT.
+### 📊 4.1. Organización de los datos
+
+🔍 **¿Cómo convertir cuatro predicciones en una única entrada para Machine Learning?**
+
+El primer paso consiste en reorganizar el dataset original para obtener **una única fila por audio**, con la siguiente estructura:
+
+- 📥 **Cuatro características de entrada (features): una por cada representación espectral (LOG, MEL, DWT y CQT) perteneciente a un mismo audio. Cada característica corresponde a la predicción generada por el respectivo modelo DenseNet121 y debe conservar su valor original en el rango de 0 a 100.0**.
+- 📤 **Una variable de salida (*target*):** corresponde al valor de `ground_truth` del audio y debe ser **binaria (0 o 1)**.
 
 Cada audio estará representado mediante un vector de cuatro características:
 
@@ -79,20 +86,26 @@ p_{i,\mathrm{CQT}}
 \right]
 $$
 
-Donde $p_{i,r}$ representa la predicción del modelo DenseNet121 para el audio $i$, utilizando la representación $r$.
-
-La etiqueta verdadera del audio estará definida por:
+Donde $p_{i,r}$ representa la predicción del modelo DenseNet121 para el audio $i$, utilizando la representación $r$, y cumple:
 
 $$
-y_i \in \{0,1\}
+0 \leq p_{i,r} \leq 100
+$$
+
+La variable de salida corresponde a la etiqueta verdadera del audio:
+
+$$
+y_i = \mathrm{ground\_truth}_i \in \{0,1\}
 $$
 
 - 🟢 **0:** audio natural.
 - 🔴 **1:** audio sintético (*fake*).
 
-💡 **¡Importante!** Los cuatro registros de un mismo audio deben tener el mismo valor de `ground_truth`. Además, se deben conservar los valores originales de `prediction` entre 0 y 100, sin convertirlos previamente en etiquetas binarias.
+💡 **¡Importante!** Las cuatro características de entrada deben conservar sus valores originales entre 0 y 100, **sin convertirlos previamente en etiquetas binarias**. Por su parte, la variable de salida debe contener exclusivamente valores de 0 o 1.
 
-De esta manera, el problema se transforma en una tarea de **clasificación supervisada con cuatro características de entrada y una etiqueta de salida por audio**.
+Además, los cuatro registros correspondientes a un mismo audio deben compartir el mismo valor de `ground_truth`.
+
+🎯 De esta manera, el problema se transforma en una tarea de **clasificación supervisada con cuatro características de entrada y una única variable de salida binaria por audio**.
 
 ### 🗂️ 4.2. División del dataset
 
