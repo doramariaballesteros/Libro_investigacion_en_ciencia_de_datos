@@ -1,21 +1,25 @@
 # Proyecto de Ciencia de Datos: Fusión de modelos para la detección de audios sintéticos
 
-## 1. Contexto del problema
+## 🎯 1. Contexto del proyecto
 
-La detección de audios sintéticos (*audio deepfake detection*) es un problema de clasificación binaria que busca distinguir entre grabaciones de voz naturales y aquellas generadas o modificadas mediante técnicas de Inteligencia Artificial.
+🎙️ La **detección de audios sintéticos (*audio deepfake detection*)** es un problema de clasificación binaria cuyo propósito es distinguir entre grabaciones de voz naturales y aquellas generadas o modificadas mediante técnicas de Inteligencia Artificial (IA).
 
-Una estrategia para abordar este problema consiste en utilizar modelos de aprendizaje profundo (*Deep Learning*) entrenados sobre diferentes representaciones de una misma señal de voz. Aunque estos modelos realizan predicciones de manera independiente, sus resultados pueden contener información complementaria que permita mejorar el desempeño de la clasificación.
+🧠 Una estrategia para abordar este problema consiste en utilizar modelos de aprendizaje profundo (*Deep Learning*) entrenados sobre diferentes representaciones de una misma señal de voz. Aunque estos modelos realizan predicciones de manera independiente, **sus resultados pueden contener información complementaria que, al combinarse, permita mejorar el desempeño de la clasificación**.
 
-En este proyecto se utilizarán las predicciones de cuatro modelos basados en la arquitectura **DenseNet121**, entrenados con diferentes representaciones de audio:
+🔬 En este proyecto trabajaremos con las predicciones de **cuatro modelos basados en la arquitectura DenseNet121**, cada uno entrenado con una representación diferente del audio:
 
-- **LOG:** espectrograma logarítmico.
-- **MEL:** espectrograma en escala Mel.
-- **DWT:** transformada discreta Wavelet.
-- **CQT:** transformada de Q constante.
+- 📊 **LOG:** espectrograma logarítmico.
+- 🎼 **MEL:** espectrograma en escala Mel.
+- 🌊 **DWT:** transformada discreta Wavelet.
+- 📈 **CQT:** transformada de Q constante.
 
-El reto consiste en desarrollar un método de fusión basado en *Machine Learning* que combine las cuatro predicciones y produzca una única decisión para cada audio.
+⚙️ **¿Cuál es el reto?**
 
-**¿Es posible obtener un mejor desempeño de clasificación al combinar las predicciones de cuatro modelos que al utilizarlas individualmente?**
+Diseñar e implementar un método de fusión basado en *Machine Learning* que aproveche las predicciones de los cuatro modelos para obtener **una única decisión por audio: natural (0) o sintético (1)**.
+
+🏆 **La pregunta que guiará nuestro desafío es:**
+
+**¿Podemos superar el desempeño de los modelos individuales mediante una estrategia inteligente de fusión y alcanzar el mayor F1 de la clase?**
 
 ## 2. Objetivo
 
