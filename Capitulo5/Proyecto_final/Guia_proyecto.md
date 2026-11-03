@@ -1,5 +1,7 @@
 # Proyecto de Ciencia de Datos: Fusión de modelos para la detección de audios sintéticos
 
+![Figura 1. Esquema de fusión de las cuatro predicciones de DenseNet121 mediante Machine Learning](Reto.png)
+
 ## 🎯 1. Contexto del proyecto
 
 🎙️ La **detección de audios sintéticos (*audio deepfake detection*)** es un problema de clasificación binaria cuyo propósito es distinguir entre grabaciones de voz naturales y aquellas generadas o modificadas mediante técnicas de Inteligencia Artificial (IA).
