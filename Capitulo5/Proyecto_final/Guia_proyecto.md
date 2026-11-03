@@ -189,6 +189,8 @@ La clase positiva será la correspondiente a los audios sintéticos (`ground_tru
 - El F1 debe calcularse comparando las predicciones fusionadas con las etiquetas verdaderas.
 - Todos los grupos deben evaluar sus modelos sobre el mismo conjunto de validación interna.
 
+📊 Análisis complementario: comparar el F1 del método de fusión con el F1 de las cuatro representaciones individuales, utilizando el mismo conjunto de validación interna.
+
 🏆 **¡El desafío final!**
 
 **El grupo ganador será aquel que obtenga el mayor F1 de clasificación binaria en el conjunto de validación interna.**
@@ -255,7 +257,7 @@ Donde:
 
 **🚀 El verdadero desafío consiste en combinar un buen desempeño experimental con una solución técnicamente fundamentada.**
 
-## 🔒 Publicación en GitHub
+## 🔒 7. Publicación en GitHub
 
 1. 📂 Cada estudiante o equipo deberá crear un repositorio en **GitHub con visibilidad privada (`Private`)**.
 
