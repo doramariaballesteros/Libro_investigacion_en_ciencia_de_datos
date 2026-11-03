@@ -105,7 +105,7 @@ Además, los cuatro registros correspondientes a un mismo audio deben compartir 
 
 ### 🗂️ 4.2. División del dataset
 
-📌 **La partición será fija y estará determinada por la numeración de los archivos de audio.**
+📌 Una vez reorganizado el dataset, se realizará una **partición fija**, determinada por la numeración de los archivos de audio.
 
 | Conjunto | Archivos | Propósito |
 |---|---|---|
@@ -114,14 +114,12 @@ Además, los cuatro registros correspondientes a un mismo audio deben compartir 
 
 ⚠️ **Condiciones obligatorias:**
 
-1. 🔗 Los cuatro registros correspondientes a un mismo audio deben permanecer agrupados.
-2. 🚫 Ningún audio puede aparecer simultáneamente en entrenamiento y validación interna.
-3. ⚖️ Todos los grupos deben utilizar exactamente la misma partición del dataset.
-4. 🔒 Los datos de validación interna no pueden utilizarse para entrenar el clasificador ni ajustar sus hiperparámetros.
+1. ⚖️ Todos los grupos deben utilizar exactamente la misma partición del dataset.
+2. 🔒 El conjunto de validación interna no podrá utilizarse para entrenar el clasificador ni ajustar sus hiperparámetros.
 
-🎯 **¿Por qué es importante?**
+💡 **¿Por qué es importante?**
 
-Una partición incorrecta puede producir *data leakage* (fuga de datos), generando resultados artificialmente elevados que no representan la verdadera capacidad de generalización del método.
+Esta división garantiza que todos los grupos desarrollen sus experimentos bajo las mismas condiciones, permitiendo **comparar de manera justa el desempeño de los métodos de fusión** y evitando la fuga de datos (*data leakage*) entre entrenamiento y validación.
 
 ### 🤖 4.3. Selección del método de fusión
 
