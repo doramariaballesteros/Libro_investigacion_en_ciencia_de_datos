@@ -74,8 +74,8 @@ La columna `ground_truth` contiene las etiquetas verdaderas:
 
 El primer paso consiste en reorganizar el dataset original para obtener **una única fila por audio**, con la siguiente estructura:
 
-- 📥 **Cuatro características de entrada (features):** una por cada representación espectral (LOG, MEL, DWT y CQT) perteneciente a un mismo audio. Cada característica corresponde a la predicción generada por el respectivo modelo DenseNet121 y debe conservar su valor original en el rango de 0 a 100.0.
-- 📤 **Una variable de salida (*target*):** corresponde al valor de `ground_truth` del audio y debe ser **binaria (0 o 1)**.
+- 📥 **Cuatro características de entrada (*features*):** una por cada representación espectral (LOG, MEL, DWT y CQT) perteneciente a un mismo audio. Cada característica corresponde al valor de `fake_probability` generado por el respectivo modelo DenseNet121 y debe conservar su **valor original en el rango de 0 a 100**.
+- 📤 **Una variable de salida (*target*):** corresponde al valor de `ground_truth` del audio, que deberá convertirse a una etiqueta binaria: **0 (natural) o 1 (sintético)**.
 
 Cada audio estará representado mediante un vector de cuatro características:
 
@@ -89,22 +89,22 @@ p_{i,\mathrm{CQT}}
 \right]
 $$
 
-Donde $p_{i,r}$ representa la predicción del modelo DenseNet121 para el audio $i$, utilizando la representación $r$, y cumple:
+Donde $p_{i,r}$ representa el valor de `fake_probability` del modelo DenseNet121 para el audio $i$, utilizando la representación $r$, y cumple:
 
 $$
 0 \leq p_{i,r} \leq 100
 $$
 
-La variable de salida corresponde a la etiqueta verdadera del audio:
+La variable de salida corresponde a la etiqueta verdadera del audio, obtenida mediante la codificación:
+
+- 🟢 **`real` → 0:** audio natural.
+- 🔴 **`fake` → 1:** audio sintético.
 
 $$
-y_i = \mathrm{ground\_truth}_i \in \{0,1\}
+y_i \in \{0,1\}
 $$
 
-- 🟢 **0:** audio natural.
-- 🔴 **1:** audio sintético (*fake*).
-
-💡 **¡Importante!** Las cuatro características de entrada deben conservar sus valores originales entre 0 y 100, **sin convertirlos previamente en etiquetas binarias**. Por su parte, la variable de salida debe contener exclusivamente valores de 0 o 1.
+💡 **¡Importante!** Las cuatro características de entrada deben conservar sus valores originales entre 0 y 100, sin convertirlos previamente en etiquetas binarias. Por su parte, la variable de salida debe contener exclusivamente valores de 0 o 1.
 
 Además, los cuatro registros correspondientes a un mismo audio deben compartir el mismo valor de `ground_truth`.
 
