@@ -247,25 +247,28 @@ Donde:
 💡 **¡Recuerda!** Obtener el mayor F1 es importante, pero también lo es comprender el método utilizado y justificar las decisiones tomadas.
 
 **🚀 El verdadero desafío consiste en combinar un buen desempeño experimental con una solución técnicamente fundamentada.**
-## 7. Entregables
 
-Cada grupo deberá presentar un archivo Jupyter Notebook (`.ipynb`) que contenga:
+## 🔒 Publicación en GitHub
 
-1. Lectura y organización del dataset.
-2. Construcción de las cuatro variables de entrada por audio.
-3. División de los datos en entrenamiento y validación interna.
-4. Investigación y justificación del algoritmo de fusión seleccionado.
-5. Implementación y entrenamiento del método de clasificación.
-6. Obtención de las predicciones fusionadas.
-7. Cálculo del F1 sobre el conjunto de validación interna.
-8. Análisis e interpretación de los resultados obtenidos.
+1. 📂 Cada estudiante o equipo deberá crear un repositorio en **GitHub con visibilidad privada (`Private`)**.
 
-El código debe ser ejecutable y permitir reproducir los resultados presentados.
+2. 👩‍🏫 La docente del curso deberá ser agregada como colaboradora del repositorio privado, utilizando su usuario de GitHub: **[@doramariaballesteros](https://github.com/doramariaballesteros)**, para que pueda consultar y evaluar los archivos publicados.
 
-**Uso de Inteligencia Artificial:** se permite utilizar herramientas de IA como apoyo para la programación y la investigación. Sin embargo, la selección del método, las decisiones de diseño y la interpretación de los resultados son responsabilidad exclusiva de los estudiantes.
+3. 💻 El repositorio deberá contener:
+   - Un **notebook de Python (`.ipynb`)** con código ejecutable, organizado de acuerdo con las etapas de la metodología: organización de los datos, partición del dataset, implementación del método de fusión y evaluación mediante F1-score.
+   - Una **justificación técnica del método de fusión seleccionado**, incluyendo la investigación realizada, su principio de funcionamiento y las razones de su elección.
+   - Los **resultados experimentales**, incluyendo el F1 obtenido sobre el conjunto de validación interna y su correspondiente análisis.
+   - La **documentación necesaria** para comprender y reproducir los procedimientos realizados.
+
+4. 🔗 El enlace del repositorio deberá ser compartido con la docente para su evaluación.
+
+5. 📅 Los archivos correspondientes al proyecto deberán estar publicados en el repositorio **a más tardar en la fecha de entrega establecida**.
+
+💡 **¡Importante!** El notebook debe permitir reproducir el proceso completo de fusión y evaluación. No basta con presentar el valor final del F1: **el código, las decisiones metodológicas y los resultados deben ser verificables**.
+
 
 ## 8. Duración
 
-**Tiempo disponible: dos semanas a partir de la asignación del proyecto.**
+Tiempo disponible: dos semanas a partir de la asignación del proyecto (hasta 17 d enoviembre de 2026).
 
-El objetivo no es únicamente obtener un F1 elevado, sino demostrar la capacidad de investigar, seleccionar, implementar y justificar una solución de Ciencia de Datos basada en evidencia experimental.
+**📌 El objetivo no es únicamente obtener un F1 elevado, sino demostrar la capacidad de investigar, seleccionar, implementar y justificar una solución de Ciencia de Datos basada en evidencia experimental.**
