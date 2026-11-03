@@ -65,10 +65,6 @@ La columna `ground_truth` contiene las etiquetas verdaderas:
 
 🔍 **¿Cómo convertir cuatro predicciones en una única entrada para Machine Learning?**
 
-### 📊 4.1. Organización de los datos
-
-🔍 **¿Cómo convertir cuatro predicciones en una única entrada para Machine Learning?**
-
 El primer paso consiste en reorganizar el dataset original para obtener **una única fila por audio**, con la siguiente estructura:
 
 - 📥 **Cuatro características de entrada (features): una por cada representación espectral (LOG, MEL, DWT y CQT) perteneciente a un mismo audio. Cada característica corresponde a la predicción generada por el respectivo modelo DenseNet121 y debe conservar su valor original en el rango de 0 a 100.0**.
