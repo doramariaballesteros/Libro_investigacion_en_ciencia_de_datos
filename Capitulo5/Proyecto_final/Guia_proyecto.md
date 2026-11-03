@@ -61,7 +61,7 @@ La columna `ground_truth` contiene las etiquetas verdaderas:
 
 ## ⚙️ 4. Metodología
 
-![Figura 1. Esquema de fusión de las cuatro predicciones de DenseNet121 mediante Machine Learning](figures/Fusion_DenseNet121.png)
+![Figura 1. Esquema de fusión de las cuatro predicciones de DenseNet121 mediante Machine Learning](figures/Metodologia.png)
 <p align="center">
   <em>Figura 1. Organización de las cuatro predicciones espectrales (LOG, MEL, DWT y CQT) y su integración mediante un clasificador de Machine Learning para la detección binaria de audios naturales y sintéticos.</em>
 </p>
