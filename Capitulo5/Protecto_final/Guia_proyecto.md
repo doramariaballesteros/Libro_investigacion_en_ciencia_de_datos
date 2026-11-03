@@ -218,17 +218,18 @@ Diseña, implementa y evalúa en Python una solución de fusión de modelos para
 | **3.5** | Diseña e implementa una solución de fusión de modelos utilizando *Machine Learning* en Python, pero el F1 obtenido es significativamente inferior al mejor resultado alcanzado por los grupos de la clase. |
 | **4.2** | Diseña e implementa una solución de fusión de modelos utilizando *Machine Learning* en Python y obtiene un F1 ligeramente inferior al mejor resultado alcanzado por los grupos de la clase. |
 | **5.0** | Diseña e implementa una solución de fusión de modelos utilizando *Machine Learning* en Python y obtiene el mayor F1 entre los grupos de la clase. |
-### 🔍 Criterio 2. Selección y justificación del método de clasificación (RA 7.1)
+
+### 🔍 Criterio 2. Investigación y justificación de métodos de fusión basados en Machine Learning (RA 7.1)
 
 **⚖️ Peso: 35 %**
 
-Se evalúa la **calidad de la investigación, selección y justificación** del método de clasificación basado en *Machine Learning*, considerando tanto su principio de funcionamiento como su pertinencia para resolver el problema de fusión.
+Investiga métodos de fusión basados en *Machine Learning* para la clasificación de voz (natural/fake) y justifica la selección y el funcionamiento del método elegido.
 
 | Nota | Descripción |
 |:---:|---|
-| **0.0** | No justifica la selección ni el funcionamiento del método de clasificación basado en *Machine Learning*. |
-| **3.0** | Justifica parcialmente la selección y el funcionamiento del método de clasificación basado en *Machine Learning*. |
-| **5.0** | Justifica correctamente la selección y el funcionamiento del método de clasificación basado en *Machine Learning*. |
+| **0.0** | No investiga métodos de fusión basados en *Machine Learning* para la clasificación de voz (natural/fake), ni justifica la selección y el funcionamiento del método utilizado. |
+| **3.0** | Investiga métodos de fusión basados en *Machine Learning* para la clasificación de voz (natural/fake), pero justifica parcialmente la selección y el funcionamiento del método elegido. |
+| **5.0** | Investiga métodos de fusión basados en *Machine Learning* para la clasificación de voz (natural/fake) y justifica correctamente la selección y el funcionamiento del método elegido. |
 
 ### 🧮 Calificación definitiva
 
