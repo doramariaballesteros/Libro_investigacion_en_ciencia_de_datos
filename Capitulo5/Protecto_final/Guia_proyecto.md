@@ -269,6 +269,6 @@ Donde:
 
 ## 8. Duración
 
-Tiempo disponible: dos semanas a partir de la asignación del proyecto (hasta 17 d enoviembre de 2026).
+Tiempo disponible: dos semanas a partir de la asignación del proyecto (hasta 17 de noviembre de 2026).
 
 **📌 El objetivo no es únicamente obtener un F1 elevado, sino demostrar la capacidad de investigar, seleccionar, implementar y justificar una solución de Ciencia de Datos basada en evidencia experimental.**
