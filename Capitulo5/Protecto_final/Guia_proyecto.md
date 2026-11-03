@@ -206,19 +206,18 @@ Investiga, selecciona e incorpora de manera autónoma una técnica, herramienta 
 
 La evaluación contempla **dos criterios complementarios**: el desempeño experimental del método de fusión y la calidad de la investigación y justificación de la técnica seleccionada.
 
-### 🔬 Criterio 1. Experimentación y evaluación del método de fusión (RA 6.1)
+### 🔬 Criterio 1. Experimentación y evaluación de la fusión de modelos para la clasificación de voz (RA 6.1)
 
 **⚖️ Peso: 65 %**
 
-Se evalúa la capacidad de diseñar y ejecutar un experimento computacional, implementando un método de fusión basado en Machine Learning y evaluando su desempeño mediante el F1 obtenido sobre el conjunto de validación interna, en comparación con los resultados de los demás grupos de la clase.
+Diseña, implementa y evalúa en Python una solución de fusión de modelos para la clasificación binaria de voz (natural/sintética), utilizando *Machine Learning* y la métrica F1-score para medir su desempeño.
 
 | Nota | Descripción |
 |:---:|---|
-| **0.0** | No obtiene un F1, dado que el código presentado no permite realizar la fusión de modelos. |
-| **3.0** | Obtiene un F1, aunque muy inferior al alcanzado por el mejor grupo de la clase. |
-| **4.0** | Obtiene un F1 ligeramente inferior al alcanzado por el mejor grupo de la clase. |
-| **5.0** | Obtiene un F1 y alcanza el mejor resultado entre los grupos de la clase. |
-
+| **0.0** | No diseña ni implementa una solución de fusión de modelos utilizando *Machine Learning* en Python. |
+| **3.5** | Diseña e implementa una solución de fusión de modelos utilizando *Machine Learning* en Python, pero el F1 obtenido es significativamente inferior al mejor resultado alcanzado por los grupos de la clase. |
+| **4.2** | Diseña e implementa una solución de fusión de modelos utilizando *Machine Learning* en Python y obtiene un F1 ligeramente inferior al mejor resultado alcanzado por los grupos de la clase. |
+| **5.0** | Diseña e implementa una solución de fusión de modelos utilizando *Machine Learning* en Python y obtiene el mayor F1 entre los grupos de la clase. |
 ### 🔍 Criterio 2. Selección y justificación del método de clasificación (RA 7.1)
 
 **⚖️ Peso: 35 %**
