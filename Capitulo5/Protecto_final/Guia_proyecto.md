@@ -21,145 +21,225 @@ Diseñar e implementar un método de fusión basado en *Machine Learning* que ap
 
 **¿Podemos superar el desempeño de los modelos individuales mediante una estrategia inteligente de fusión y alcanzar el mayor F1 de la clase?**
 
-## 2. Objetivo
+## 🎯 2. Objetivo
 
-Diseñar, implementar y evaluar un método de fusión basado en Machine Learning que combine las predicciones de cuatro modelos DenseNet121, correspondientes a las representaciones LOG, MEL, DWT y CQT, con el propósito de **maximizar el F1 de clasificación binaria** sobre un conjunto de validación interna.
+🧠 **Diseñar, implementar y evaluar** un método de fusión basado en *Machine Learning* que combine las predicciones de cuatro modelos **DenseNet121**, correspondientes a las representaciones LOG, MEL, DWT y CQT, con el propósito de **maximizar el F1 de clasificación binaria** sobre un conjunto de validación interna.
 
-## 3. Descripción del dataset
+## 📂 3. Descripción del dataset
 
-El archivo `fake_densenet121.csv` contiene las predicciones generadas por cuatro modelos DenseNet121 sobre un conjunto de audios.
+🎙️ El archivo `fake_densenet121.csv` contiene las predicciones generadas por cuatro modelos DenseNet121 sobre un conjunto de audios naturales y sintéticos.
 
-Cada audio aparece en cuatro registros, uno por representación, con las siguientes columnas de interés:
+🔎 **¿Cómo están organizados los datos?**
+
+Cada audio aparece en **cuatro registros**, uno por cada representación (LOG, MEL, DWT y CQT). Por tanto, las cuatro predicciones corresponden a una misma señal de voz, aunque sus valores pueden ser diferentes.
+
+📋 **Columnas de interés:**
 
 | Campo | Descripción |
 |---|---|
-| Identificador del audio | Nombre del archivo WAV al que corresponde la predicción. |
-| Representación | LOG, MEL, DWT o CQT. |
-| `prediction` | Valor entre 0 y 100 generado por el modelo de clasificación. |
-| `ground_truth` | Etiqueta verdadera del audio. |
+| 🎵 **Identificador del audio** | Nombre del archivo WAV al que corresponde la predicción. |
+| 📊 **Representación** | Tipo de representación utilizada: LOG, MEL, DWT o CQT. |
+| 🔢 **`prediction`** | Valor entre 0 y 100 generado por el modelo DenseNet121. |
+| 🏷️ **`ground_truth`** | Etiqueta verdadera del audio: 0 (natural) o 1 (sintético). |
 
-### Interpretación de los valores
+💡 **¡Atención a este detalle!**
 
-La columna `prediction` contiene valores en el intervalo de 0 a 100:
+Los cuatro registros de un mismo audio deben compartir el mismo valor de `ground_truth`, pero pueden presentar diferentes valores de `prediction`.
 
-- Valores inferiores a 50: predicción de audio natural.
-- Valores iguales o superiores a 50: predicción de audio sintético (*fake*).
+⚙️ **Interpretación de las predicciones:**
+
+- 🟢 **0 ≤ `prediction` < 50:** el modelo predice un audio natural.
+- 🔴 **50 ≤ `prediction` ≤ 100:** el modelo predice un audio sintético (*fake*).
 
 La columna `ground_truth` contiene las etiquetas verdaderas:
 
 - **0:** audio natural.
 - **1:** audio sintético (*fake*).
 
-**Importante:** los cuatro registros correspondientes a un mismo audio tienen el mismo valor de `ground_truth`, aunque sus valores de `prediction` pueden ser diferentes.
+🚀 **El desafío:** transformar las cuatro predicciones de cada audio en un único conjunto de características que permita entrenar un clasificador de fusión basado en *Machine Learning*.
 
-## 4. Metodología
 
-### 4.1. Organización de los datos
+## ⚙️ 4. Metodología
 
-El primer paso consiste en transformar la estructura original del dataset para obtener una única fila por audio.
+### 📊 4.1. Organización de los datos
 
-Cada fila debe contener las cuatro predicciones correspondientes a LOG, MEL, DWT y CQT, además de su etiqueta verdadera.
+🔍 **¿Cómo convertir cuatro predicciones en una única entrada para Machine Learning?**
 
-De esta manera, el problema de fusión se transforma en una tarea de clasificación supervisada con cuatro variables de entrada y una variable de salida.
+El primer paso consiste en reorganizar el dataset original para obtener **una única fila por audio**, conservando las predicciones correspondientes a las cuatro representaciones: LOG, MEL, DWT y CQT.
 
-### 4.2. División del dataset
+Cada audio estará representado mediante un vector de cuatro características:
 
-La división será fija y estará determinada por la numeración de los archivos de audio.
+$$
+\mathbf{x}_i =
+\left[
+p_{i,\mathrm{LOG}},
+p_{i,\mathrm{MEL}},
+p_{i,\mathrm{DWT}},
+p_{i,\mathrm{CQT}}
+\right]
+$$
+
+Donde $p_{i,r}$ representa la predicción del modelo DenseNet121 para el audio $i$, utilizando la representación $r$.
+
+La etiqueta verdadera del audio estará definida por:
+
+$$
+y_i \in \{0,1\}
+$$
+
+- 🟢 **0:** audio natural.
+- 🔴 **1:** audio sintético (*fake*).
+
+💡 **¡Importante!** Los cuatro registros de un mismo audio deben tener el mismo valor de `ground_truth`. Además, se deben conservar los valores originales de `prediction` entre 0 y 100, sin convertirlos previamente en etiquetas binarias.
+
+De esta manera, el problema se transforma en una tarea de **clasificación supervisada con cuatro características de entrada y una etiqueta de salida por audio**.
+
+### 🗂️ 4.2. División del dataset
+
+📌 **La partición será fija y estará determinada por la numeración de los archivos de audio.**
 
 | Conjunto | Archivos | Propósito |
 |---|---|---|
-| Entrenamiento | `1.wav` hasta `450.wav` | Entrenar el método de fusión. |
-| Validación interna | `451.wav` en adelante | Evaluar el desempeño mediante F1. |
+| 🧠 **Entrenamiento** | `1.wav` hasta `450.wav` | Entrenar el algoritmo de fusión. |
+| 📈 **Validación interna** | `451.wav` en adelante | Evaluar el desempeño del método mediante F1. |
 
-Se deben cumplir las siguientes condiciones:
+⚠️ **Condiciones obligatorias:**
 
-1. Los cuatro registros de cada audio deben permanecer agrupados.
-2. Ningún audio puede aparecer simultáneamente en entrenamiento y validación.
-3. Todos los grupos deben utilizar exactamente la misma partición.
-4. El conjunto de validación interna no debe utilizarse para ajustar el modelo.
+1. 🔗 Los cuatro registros correspondientes a un mismo audio deben permanecer agrupados.
+2. 🚫 Ningún audio puede aparecer simultáneamente en entrenamiento y validación interna.
+3. ⚖️ Todos los grupos deben utilizar exactamente la misma partición del dataset.
+4. 🔒 Los datos de validación interna no pueden utilizarse para entrenar el clasificador ni ajustar sus hiperparámetros.
 
-### 4.3. Selección del método de fusión
+🎯 **¿Por qué es importante?**
 
-Cada grupo deberá investigar y seleccionar de manera autónoma un algoritmo de Machine Learning capaz de combinar las cuatro predicciones.
+Una partición incorrecta puede producir *data leakage* (fuga de datos), generando resultados artificialmente elevados que no representan la verdadera capacidad de generalización del método.
 
-La elección del algoritmo es libre, siempre que permita realizar clasificación binaria y se justifique su aplicación al problema.
+### 🤖 4.3. Selección del método de fusión
 
-La entrada al método de fusión estará formada por las cuatro predicciones de cada audio:
+🔬 **¡Aquí comienza el verdadero reto de investigación!**
 
-\[
-\mathbf{x}_i =
-[p_{LOG},p_{MEL},p_{DWT},p_{CQT}]
-\]
+Cada grupo deberá **investigar, seleccionar e implementar de manera autónoma** un algoritmo de *Machine Learning* que permita combinar las cuatro predicciones de DenseNet121 y generar una única decisión por audio.
 
-La salida será una única etiqueta:
+La elección del algoritmo es libre, siempre que:
 
-\[
-\hat{y}_i\in\{0,1\}
-\]
+- 🧠 Permita resolver un problema de clasificación binaria.
+- 📚 Se investigue y comprenda su principio de funcionamiento.
+- ⚙️ Se justifique su selección para el problema de fusión.
+- 💻 Se implemente correctamente utilizando Python.
 
-Donde:
+Matemáticamente, el proceso de fusión puede expresarse como:
 
-- **0:** audio natural.
-- **1:** audio sintético.
-
-Los estudiantes podrán investigar diferentes algoritmos, estrategias de preprocesamiento, selección de hiperparámetros y mecanismos de clasificación.
-
-### 4.4. Evaluación del método de fusión
-
-El desempeño se evaluará mediante el **F1-score**, calculado sobre el conjunto de validación interna.
-
-\[
-F1=\frac{2PR}{P+R}
-\]
+$$
+\hat{y}_i = f_{\theta}(\mathbf{x}_i)
+$$
 
 Donde:
 
-- \(P\): precisión (*Precision*).
-- \(R\): sensibilidad (*Recall*).
+- $\mathbf{x}_i$: vector de cuatro predicciones del audio $i$.
+- $f_{\theta}$: clasificador de fusión basado en *Machine Learning*, con parámetros $\theta$ aprendidos durante el entrenamiento.
+- $\hat{y}_i$: predicción final del audio.
+
+La salida del clasificador será:
+
+$$
+\hat{y}_i \in \{0,1\}
+$$
+
+- 🟢 **0:** audio natural.
+- 🔴 **1:** audio sintético.
+
+💡 **Libertad de exploración:** los estudiantes podrán investigar diferentes algoritmos, estrategias de preprocesamiento, mecanismos de clasificación y procedimientos de selección de hiperparámetros, siempre que respeten la partición establecida.
+
+### 📈 4.4. Evaluación del método de fusión
+
+🏆 **¿Qué tan buena es la estrategia de fusión desarrollada?**
+
+El desempeño se evaluará mediante el **F1-score**, calculado exclusivamente sobre el conjunto de validación interna.
+
+Esta métrica combina la precisión (*Precision*) y la sensibilidad (*Recall*) mediante su media armónica:
+
+$$
+F1 = \frac{2PR}{P+R}
+$$
+
+Donde:
+
+- **$P$ — Precision:** proporción de audios clasificados como sintéticos que realmente son sintéticos.
+- **$R$ — Recall:** proporción de audios sintéticos que fueron correctamente identificados.
 
 La clase positiva será la correspondiente a los audios sintéticos (`ground_truth = 1`).
 
-Cada audio debe producir una única predicción fusionada, que se comparará con su etiqueta verdadera.
+📌 **Condiciones de evaluación:**
 
-**El grupo ganador será aquel que obtenga el mayor F1 en el conjunto de validación interna.**
+- Cada audio debe producir una única predicción fusionada.
+- El F1 debe calcularse comparando las predicciones fusionadas con las etiquetas verdaderas.
+- Todos los grupos deben evaluar sus modelos sobre el mismo conjunto de validación interna.
 
-## 5. Resultados de aprendizaje
+🏆 **¡El desafío final!**
 
-**RA 6.1.** Diseña y ejecuta experimentos computacionales sobre datos estructurados, series de tiempo y señales de voz, comparando distintas estrategias de análisis, preprocesamiento, ingeniería de características o modelado, interpretando los resultados mediante métricas apropiadas y proponiendo mejoras a partir de la evidencia obtenida.
+**El grupo ganador será aquel que obtenga el mayor F1 de clasificación binaria en el conjunto de validación interna.**
 
-**RA 7.1.** Investiga, selecciona e incorpora de manera autónoma una técnica, herramienta o estrategia relacionada con Ciencia de Datos que no haya sido desarrollada explícitamente en clase, justificando su integración dentro de la solución de un problema basado en datos estructurados, series de tiempo o señales de voz mediante Python.
+Sin embargo, el desempeño no será el único aspecto evaluado: también se valorará la capacidad de **investigar, comprender y justificar técnicamente el método de fusión seleccionado**.
 
-## 6. Rúbrica de evaluación
+## 🎓 5. Resultados de aprendizaje
 
-### Criterio 1. Desempeño del método de fusión (RA 6.1)
+Este proyecto permitirá evaluar dos resultados de aprendizaje, relacionados con la **experimentación computacional** y la **investigación autónoma de técnicas de Ciencia de Datos**.
 
-**Peso: 65 %**
+🔬 **RA 6.1. Experimentación y análisis de resultados**
+
+Diseña y ejecuta experimentos computacionales sobre datos estructurados, series de tiempo y señales de voz, comparando distintas estrategias de análisis, preprocesamiento, ingeniería de características o modelado, interpretando los resultados mediante métricas apropiadas y proponiendo mejoras a partir de la evidencia obtenida.
+
+🧠 **RA 7.1. Investigación y aprendizaje autónomo**
+
+Investiga, selecciona e incorpora de manera autónoma una técnica, herramienta o estrategia relacionada con Ciencia de Datos que no haya sido desarrollada explícitamente en clase, justificando su integración dentro de la solución de un problema basado en datos estructurados, series de tiempo o señales de voz mediante Python.
+
+---
+
+## 🏆 6. Rúbrica de evaluación
+
+La evaluación contempla **dos criterios complementarios**: el desempeño experimental del método de fusión y la calidad de la investigación y justificación de la técnica seleccionada.
+
+### 📈 Criterio 1. Desempeño del método de fusión (RA 6.1)
+
+**⚖️ Peso: 65 %**
+
+Se evalúa el **F1 obtenido por el método de fusión** sobre el conjunto de validación interna, tomando como referencia el mejor resultado alcanzado entre los grupos de la clase.
 
 | Nota | Descripción |
-|---|---|
+|:---:|---|
 | **0.0** | No obtiene un F1, dado que el código presentado no permite realizar la fusión de modelos. |
 | **3.0** | Obtiene un F1, aunque muy inferior al alcanzado por el mejor grupo de la clase. |
 | **4.0** | Obtiene un F1 ligeramente inferior al alcanzado por el mejor grupo de la clase. |
 | **5.0** | Obtiene un F1 y alcanza el mejor resultado entre los grupos de la clase. |
 
-### Criterio 2. Selección y justificación del método de clasificación (RA 7.1)
+### 🔍 Criterio 2. Selección y justificación del método de clasificación (RA 7.1)
 
-**Peso: 35 %**
+**⚖️ Peso: 35 %**
+
+Se evalúa la **calidad de la investigación, selección y justificación** del método de clasificación basado en *Machine Learning*, considerando tanto su principio de funcionamiento como su pertinencia para resolver el problema de fusión.
 
 | Nota | Descripción |
-|---|---|
-| **0.0** | No justifica la selección ni el funcionamiento del método de clasificación basado en Machine Learning. |
-| **3.0** | Justifica parcialmente la selección y el funcionamiento del método de clasificación basado en Machine Learning. |
-| **5.0** | Justifica correctamente la selección y el funcionamiento del método de clasificación basado en Machine Learning. |
+|:---:|---|
+| **0.0** | No justifica la selección ni el funcionamiento del método de clasificación basado en *Machine Learning*. |
+| **3.0** | Justifica parcialmente la selección y el funcionamiento del método de clasificación basado en *Machine Learning*. |
+| **5.0** | Justifica correctamente la selección y el funcionamiento del método de clasificación basado en *Machine Learning*. |
 
-### Calificación definitiva
+### 🧮 Calificación definitiva
 
-\[
-\text{Nota final}=0.65C_1+0.35C_2
-\]
+La nota final del proyecto se calculará mediante la siguiente expresión:
 
-Donde \(C_1\) y \(C_2\) son las calificaciones de los criterios 1 y 2, respectivamente.
+$$
+\text{Nota final} = 0.65C_1 + 0.35C_2
+$$
 
+Donde:
+
+- 📈 **$C_1$:** calificación del desempeño del método de fusión (65 %).
+- 🔍 **$C_2$:** calificación de la selección y justificación del método de clasificación (35 %).
+
+💡 **¡Recuerda!** Obtener el mayor F1 es importante, pero también lo es comprender el método utilizado y justificar las decisiones tomadas.
+
+**🚀 El verdadero desafío consiste en combinar un buen desempeño experimental con una solución técnicamente fundamentada.**
 ## 7. Entregables
 
 Cada grupo deberá presentar un archivo Jupyter Notebook (`.ipynb`) que contenga:
